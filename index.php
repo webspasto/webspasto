@@ -1,8 +1,18 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webs Pasto</title>
+</head>
+<style>
+	*{
+		background: black;
+		color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+</style>
+<body>
+	<h1>Webs Pasto</h1>
+</body>
+</html>
