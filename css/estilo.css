@@ -43,3 +43,8 @@ nav li a {
 nav li a:hover {
     background-color: #D4B86F;
 }
+footer{
+    background: black;
+    color:white;
+    text-align: center;
+}

@@ -12,6 +12,6 @@
         <?php include './header.php'; ?>
 </body>
 <footer>
-		 <?php include 'footer.php'; ?>
+		 <?php include 'footer.html'; ?>
 </footer>
 </html>
