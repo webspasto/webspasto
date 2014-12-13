@@ -6,7 +6,13 @@
     </div>
     <nav>
         <li>
-            <a href="index.php">Inicio</a>
+            <a title="Inicio" href="index.php">Inicio</a><div id="sep"></div>
+        </li>
+        <li>
+            <a title="Nosotros" href="">Nosotros</a><div id="sep"></div>
+        </li>
+        <li>
+            <a title="Contactos" href="contactos.php">Contactos</a><div id="sep"></div>
         </li>
     </nav>
 </header>
