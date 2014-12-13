@@ -7,5 +7,6 @@
 
 <body>
 	<h1>Webs Pasto</h1>
+        <?php include './header.php'; ?>
 </body>
 </html>

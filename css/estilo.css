@@ -9,6 +9,29 @@
     font-size: 30px;
     text-align: center;
 }
+
 body{
     margin: 0 auto 0;
+}
+
+header {
+    
+}
+
+nav {
+    width: auto;
+    height: 30px;
+    background-color: rgb(241, 214, 97);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    
+}
+
+nav li a:hover {
+    
 }
