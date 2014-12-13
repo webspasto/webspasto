@@ -43,6 +43,7 @@ nav li a {
 nav li a:hover {
     background-color: #D4B86F;
 }
+
 footer{
     color:grey;
     text-align: center;
@@ -51,4 +52,20 @@ footer{
 #contenedor{
     background: gray;
     min-height: 200px;
+}
+
+#encabezado {
+    width: auto;
+    height: 150px;
+    margin: 0 auto 0;
+}
+
+#logo_cabecera {
+    width: 283px;
+    height: 112px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    background: url('../img/Logo.jpg') no-repeat;
+    background-size: 283px 112px;
 }
