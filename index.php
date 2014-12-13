@@ -8,7 +8,6 @@
 </head>
 
 <body>
-	<h1>Webs Pasto</h1>
         <?php include './header.php'; ?>
     <section id="contenedor">
     	Contenido
