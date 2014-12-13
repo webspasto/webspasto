@@ -34,7 +34,7 @@
     <body>
         <?php include 'header.php'; ?>
         <section id="contenedor">
-            <div id="divprincipal">
+            <div id="ventana">
                 <?php include 'principal.php'; ?>
             </div>
         </section>
