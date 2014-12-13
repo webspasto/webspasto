@@ -4,14 +4,12 @@
     Author     : Webspasto
 */
 *{
-    background: black;
-    color: white;
-    font-size: 30px;
-    text-align: center;
+    font-family: Arial;
 }
 
 body{
     margin: 0 auto 0;
+    width: 900px;
 }
 
 header {
@@ -20,18 +18,28 @@ header {
 
 nav {
     width: auto;
-    height: 30px;
-    background-color: rgb(241, 214, 97);
+    border-radius: 4px;
+    background-color: #F1D661;
 }
 
 nav li {
+    height: 30px;
+    list-style: none;
     display: inline-block;
 }
 
 nav li a {
-    
+    float: left;
+    font-size: 16px;
+    color: #FFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 nav li a:hover {
-    
+    background-color: #D4B86F;
 }

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+        <title>WebsPasto -Inicio</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Webs Pasto</title>
 </head>
 
