@@ -10,6 +10,9 @@
 <body>
 	<h1>Webs Pasto</h1>
         <?php include './header.php'; ?>
+    <section id="contenedor">
+    	Contenido
+    </section>
 </body>
 <footer>
 		 <?php include 'footer.html'; ?>
