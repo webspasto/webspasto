@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <script type="text/javascript">
             function cambiarPantalla(str) {
-
                 if (str.length == 0) {
                     //document.getElementById('txtHint').innerHTML="";
                     return;
@@ -18,13 +17,10 @@
                     conexion = new ActiveXObjet("Microsoft.XMLHttpRequest");
 
                 conexion.onreadystatechange = function () {
-
-
-                    if (conexion.readyState == 4 && conexion.status == 200) {
-
-                        document.getElementById('divprincipal').innerHTML = conexion.responseText;
-                    }
+                    if (conexion.readyState == 4 && conexion.status == 200)
+                        document.getElementById('ventana').innerHTML = conexion.responseText;
                 }
+                
                 conexion.open("GET", "pantallas.php?q=" + str, true);
                 conexion.send(null);
             }
