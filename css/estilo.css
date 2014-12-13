@@ -3,7 +3,12 @@
     Created on : 13-dic-2014, 8:28:30
     Author     : Webspasto
 */
-
+*{
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
 body{
     margin: 0 auto 0;
 }
