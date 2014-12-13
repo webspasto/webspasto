@@ -24,7 +24,7 @@
 
 						if (conexion.readyState == 4 && conexion.status == 200) {
 
-							document.getElementById('contenedor').innerHTML=conexion.responseText;
+							document.getElementById('divprincipal').innerHTML=conexion.responseText;
 						}
 					}
 						conexion.open("GET","pantallas.php?q="+str,true);
@@ -36,7 +36,9 @@
 <body>
         <?php include 'header.php'; ?>
     <section id="contenedor">
-    	<?php include 'principal.php'; ?>
+    	<div id="divprincipal">
+    		<?php include 'principal.php'; ?>
+    	</div>
     </section>
 </body>
 <footer>

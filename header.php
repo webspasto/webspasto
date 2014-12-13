@@ -5,13 +5,13 @@
     </div>
     <nav>
         <li>
-            <a title="Inicio" href="index.php">Inicio</a>
+            <a title="Inicio" href="#" onclick="cambiarPantalla('inicio');">Inicio</a>
         </li>
         <li>
-            <a title="Nosotros" href="">Nosotros</a>
+            <a title="Nosotros" href="#"  onclick="cambiarPantalla('nosotros');">Nosotros</a>
         </li>
         <li>
-            <a title="Contactos" href="contactos.php">Contactos</a>
+            <a title="Contactos" href="#" onclick="cambiarPantalla('contactos');">Contactos</a>
         </li>
     </nav>
 </header>

@@ -67,6 +67,7 @@ footer{
     border: 2px solid #F8F6E9;
     border-radius: 4px;
     min-height: 200px;
+    padding: 5px;
 }
 
 #encabezado {
