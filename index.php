@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Desarrollo de aplicaciones web y de escritorio">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>WebsPasto -Inicio</title>
+        <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
         <script type="text/javascript">
