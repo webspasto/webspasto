@@ -1,6 +1,11 @@
 <header>
     <div id="encabezado">
-        <div id="titulo_cabecera">Webs Pasto</div>
+        <div id="social">
+            <a href="https://twitter.com/webspasto" title="Twitter"><div id="tw"></div></a>
+            <a href="https://www.facebook.com/pages/Desarrollo-Web-Pasto/382046511962765" title="Facebook"><div id="fb"></div></a>
+            <a href="https://plus.google.com/u/0/105315169514370720149/" title="Google +"><div id="go"></div></a>
+            <!--<a href="https://www.youtube.com" title="Youtube"><div id="yt"></div></a>-->
+        </div>
         <div id="logo_cabecera"></div>
     </div>
     <nav>
