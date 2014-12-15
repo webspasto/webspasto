@@ -201,9 +201,12 @@ div#divredes{
 }
 
 #fb:hover{
-    background: url('../img/social_c_facebook_h.png') no-repeat;
-    //background: url('../img/social_s_facebook_h.png') no-repeat;
     background-size: 30px;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
 }
 
 #tw{
@@ -216,9 +219,12 @@ div#divredes{
 }
 
 #tw:hover{
-    background: url('../img/social_c_twitter_h.png') no-repeat;
-    //background: url('../img/social_s_twitter_h.png') no-repeat;
     background-size: 30px;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
 }
 
 #go{
@@ -231,9 +237,12 @@ div#divredes{
 }
 
 #go:hover{
-    background: url('../img/social_c_googleplus_h.png') no-repeat;
-    //background: url('../img/social_s_googleplus_h.png') no-repeat;
     background-size: 30px;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
 }
 
 #yt{
@@ -246,7 +255,10 @@ div#divredes{
 }
 
 #yt:hover{
-    background: url('../img/social_c_youtube_h.png') no-repeat;
-    //background: url('../img/social_s_youtube_h.png') no-repeat;
     background-size: 30px;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
 }
