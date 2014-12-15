@@ -118,7 +118,7 @@ footer{
     margin: 0 auto 0;
 }
 
-.formvertical input,textarea{
+.formvertical input,textarea,label{
     font-family: sans-serif;
     border-radius: 5px;
     /*border:2px solid gray;*/

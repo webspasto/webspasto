@@ -34,9 +34,9 @@ $mail->AddReplyTo("webspasto@gmail.com", "Destinatario");
 
 
 if(!$mail->Send()) {
-echo "Error: " . $mail->ErrorInfo;
+header('Location: contactos.php?m=2');
 } else {
-echo "Mensaje enviado correctamente";
+header('Location: contactos.php?m=1');
 }
 ?>
 <style>
