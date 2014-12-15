@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+<meta charset="utf-8">﻿
 <?php
 include("lib/class.phpmailer.php");
 include("lib/class.smtp.php");
@@ -20,7 +20,8 @@ $mail->AltBody = "Mensaje de WP";
 $nombre=$_POST['txtnombre'];
 $email=$_POST['txtemail'];
 $consulta=$_POST['txtconsulta'];
-$mail->MsgHTML("<b style='background: red;	color: white;'>".$nombre.$email.$consulta."</b>.");
+$mensaje = "<div style='padding:5px; background:#C6C6C6; border:0px solid black;''><div><p><strong>Nombre:</strong> ".$nombre."</p></div><div><p><strong>Email: </strong>".$email."</p></div><div style='text-align:justify;'><p><strong>Consulta: </strong>".$consulta."</p></div></div>";
+$mail->MsgHTML($mensaje);
 $mail->AddAddress("webspasto@gmail.com", "");
 $mail->IsHTML(true);
 
