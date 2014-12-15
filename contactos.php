@@ -27,8 +27,9 @@ if (isset($_GET['m'])){
                 <form action="enviarEmail.php" method="post">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
                     <label for="msg"><?php echo $msg; ?></label>
-                    <input type="text" id="txtnombre" name="txtnombre"  placeholder="Tu nombre" required></input>
-                    <input type="email" id="txtemail" name="txtemail" placeholder="Tu correo electronico" required></input>
+                    <input type="text" id="txtnombre" name="txtnombre"  placeholder="Tu nombre" required />
+                    <input type="email" id="txtemail" name="txtemail" placeholder="Tu correo electronico" required />
+                    <input type="text" id="txtasunto" name="txtasunto" placeholder="Asunto" required />
                     <textarea name="txtconsulta" id="txtconsulta" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
                     <input type="submit" value="Enviar"></input>
                 </form>

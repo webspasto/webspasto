@@ -1,3 +1,8 @@
 <div class="divsolo">
-	Contenido principal
+    <details>
+        <summary>
+            ¿Pregunta?
+        </summary>
+        Respuesta
+    </details>
 </div>	
