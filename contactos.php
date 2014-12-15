@@ -1,5 +1,5 @@
 <div class="divizquierda formvertical">
-    <form action="">
+    <form action="enviarEmail.php" method="post">
         <h2 style="text-align:center;">Enviamos tu Petición</h2>
         <input type="text" id="txtnombre" name="txtnombre"  placeholder="Tu nombre" required></input>
         <input type="email" id="txtemail" name="txtemail" placeholder="Tu correo electronico" required></input>

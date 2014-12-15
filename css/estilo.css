@@ -199,6 +199,21 @@ div#divredes{
 }
 
 #social img:hover{
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform: scale(1) rotate(-360deg) ;
+    -webkit-transform: scale(1) rotate(-360deg) ;
+    -o-transform: scale(1) rotate(-360deg) ;
+    -ms-transform: scale(1) rotate(-360deg) ;
+    ransform: scale(1) rotate(-360deg);
+
+/*     transform:rotateY(360deg);
+   transition-duration: 1s;
+   -webkit-transform:rotateY(360deg);
+   -webkit-transition-duration: 1s;*/
+
     background-size: 30px;
     opacity: 0.5;
     -webkit-opacity: 0.5;
