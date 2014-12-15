@@ -48,11 +48,10 @@ if (isset($_GET['m'])){
                     <tr>
                         <td><hr>Siguenos<br>
                             <div id="divredes"class="social">
-                                <a href="https://www.facebook.com/pages/Desarrollo-Web-Pasto/382046511962765" title="Facebook"><img src="img/icon_facebook.png"></a>
-                                <a href="#" title="Gmail"><img src="img/icon_gmail.png"></a>
-                                <a href="https://plus.google.com/u/0/105315169514370720149" title="Google +"><img src="img/icon_googlemas.png"></a>
-                                <a href="https://twitter.com/webspasto" title="Twitter"><img src="img/icon_twitter.png"></a>
-                                <a href="#" title="Youtube"><img src="img/icon_youtube.png"></a>
+                                <a href="https://twitter.com/webspasto" title="Twitter"><img src="img/social_c_twitter.png"></a>
+                                <a href="https://www.facebook.com/pages/Desarrollo-Web-Pasto/382046511962765" title="Facebook"><img src="img/social_c_facebook.png"></a>
+                                <a href="https://plus.google.com/u/0/105315169514370720149/" title="Google +"><img src="img/social_c_googleplus.png"></a>
+                                <a href="https://www.youtube.com/channel/UCsKneHB6ja_sI2qa6tHmUyg/feed" title="Youtube"><img src="img/social_c_youtube.png"></a>
                             </div>
                         </td>
                     </tr>
