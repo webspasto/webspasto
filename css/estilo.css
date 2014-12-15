@@ -184,77 +184,20 @@ div#divredes{
 
 #social{
     height: auto;
-    width: auto;
+    width: 40px;
     margin-top: 20px;
-    margin-right: 15px;
     float: right;
 }
 
-#fb{
+#social img{
     height: 30px;
     width: 30px;
     margin: 0 auto 0;
     margin-top: 5px;
-    background: url('../img/social_c_facebook.png') no-repeat;
-    //background: url('../img/social_s_facebook.png') no-repeat;
     background-size: 30px;
 }
 
-#fb:hover{
-    background-size: 30px;
-    opacity: 0.5;
-    -webkit-opacity: 0.5;
-    -moz-opacity: 0.5;
-    -ms-opacity: 0.5;
-    -o-opacity: 0.5;
-}
-
-#tw{
-    height: 30px;
-    width: 30px;
-    margin-top: 5px;
-    background: url('../img/social_c_twitter.png') no-repeat;
-    //background: url('../img/social_s_twitter.png') no-repeat;
-    background-size: 30px;
-}
-
-#tw:hover{
-    background-size: 30px;
-    opacity: 0.5;
-    -webkit-opacity: 0.5;
-    -moz-opacity: 0.5;
-    -ms-opacity: 0.5;
-    -o-opacity: 0.5;
-}
-
-#go{
-    height: 30px;
-    width: 30px;
-    margin-top: 5px;
-    background: url('../img/social_c_googleplus.png') no-repeat;
-    //background: url('../img/social_s_googleplus.png') no-repeat;
-    background-size: 30px;
-}
-
-#go:hover{
-    background-size: 30px;
-    opacity: 0.5;
-    -webkit-opacity: 0.5;
-    -moz-opacity: 0.5;
-    -ms-opacity: 0.5;
-    -o-opacity: 0.5;
-}
-
-#yt{
-    height: 30px;
-    width: 30px;
-    margin-top: 5px;
-    background: url('../img/social_c_youtube.png') no-repeat;
-    //background: url('../img/social_s_youtube.png') no-repeat;
-    background-size: 30px;
-}
-
-#yt:hover{
+#social img:hover{
     background-size: 30px;
     opacity: 0.5;
     -webkit-opacity: 0.5;
