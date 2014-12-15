@@ -39,6 +39,3 @@ header('Location: contactos.php?m=2');
 header('Location: contactos.php?m=1');
 }
 ?>
-<style>
-	
-</style>
