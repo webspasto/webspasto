@@ -1,4 +1,4 @@
-<meta charset="utf-8">﻿
+<meta charset="utf-8">
 <?php
 include("lib/class.phpmailer.php");
 include("lib/class.smtp.php");
