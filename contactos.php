@@ -1,4 +1,3 @@
-</div>
 <div class="divizquierda formvertical">
     <form action="">
         <h2 style="text-align:center;">Enviamos tu Petición</h2>

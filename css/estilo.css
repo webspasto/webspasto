@@ -185,48 +185,68 @@ div#divredes{
 #social{
     height: auto;
     width: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 15px;
     float: right;
 }
 
 #fb{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     margin: 0 auto 0;
-    background: url('../img/social-fb.png') no-repeat;
+    margin-top: 5px;
+    background: url('../img/social_c_facebook.png') no-repeat;
+    //background: url('../img/social_s_facebook.png') no-repeat;
+    background-size: 30px;
 }
 
 #fb:hover{
-    background: url('../img/social-fb_hover.png') no-repeat;
+    background: url('../img/social_c_facebook_h.png') no-repeat;
+    //background: url('../img/social_s_facebook_h.png') no-repeat;
+    background-size: 30px;
 }
 
 #tw{
-    height: 20px;
-    width: 20px;
-    background: url('../img/social-tw.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    background: url('../img/social_c_twitter.png') no-repeat;
+    //background: url('../img/social_s_twitter.png') no-repeat;
+    background-size: 30px;
 }
 
 #tw:hover{
-    background: url('../img/social-tw_hover.png') no-repeat;
+    background: url('../img/social_c_twitter_h.png') no-repeat;
+    //background: url('../img/social_s_twitter_h.png') no-repeat;
+    background-size: 30px;
 }
 
 #go{
-    height: 20px;
-    width: 20px;
-    background: url('../img/social-g+.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    background: url('../img/social_c_googleplus.png') no-repeat;
+    //background: url('../img/social_s_googleplus.png') no-repeat;
+    background-size: 30px;
 }
 
 #go:hover{
-    background: url('../img/social-g+_hover.png') no-repeat;
+    background: url('../img/social_c_googleplus_h.png') no-repeat;
+    //background: url('../img/social_s_googleplus_h.png') no-repeat;
+    background-size: 30px;
 }
 
 #yt{
-    height: 20px;
-    width: 20px;
-    background: url('../img/social-yt.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    background: url('../img/social_c_youtube.png') no-repeat;
+    //background: url('../img/social_s_youtube.png') no-repeat;
+    background-size: 30px;
 }
 
 #yt:hover{
-    background: url('../img/social-yt_hover.png') no-repeat;
+    background: url('../img/social_c_youtube_h.png') no-repeat;
+    //background: url('../img/social_s_youtube_h.png') no-repeat;
+    background-size: 30px;
 }
