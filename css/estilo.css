@@ -32,19 +32,20 @@ nav li {
 }
 
 nav li a {
-    text-align: center;
+    vertical-align: middle;
+    -moz-vertical-align: middle;
     float: left;
     font-size: 18px;
     color: #FFF;
-    padding: 3px;
+    padding: 4px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
     text-decoration: none;
     border-radius: 4px;
     border-right-color: #F8F6E9;
     border-right-style: solid;
     border-right-width: 2px;
+    position: relative;
 }
 
 nav li a:hover {
