@@ -1,12 +1,15 @@
 <?php
 $msg = "";
+$msgId= "";
 if (isset($_GET['m'])){
     $get = $_GET['m'];
     if ($get==1){
-        $msg="Su mensaje fue enviado con éxito";
+        $msg="Gracias, su mensaje fue enviado con éxito.";
+        $msgId="class='msg-exito'";
     }
     else if ($get==2){
-        $msg="Su mensaje fue enviado con éxito";
+        $msg="Lo sentimos, su mensaje no pudo ser enviado.";
+        $msgId="class='msg-error'";
     }
 }
 ?>
@@ -19,24 +22,63 @@ if (isset($_GET['m'])){
         <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
+        <script src="js/heartcode-canvasloader-min-0.9.1.js"></script>
+
         <script type="text/javascript">
-            function spin(){
-                window.onload=document.getElementById("loading").style.display = "none";
+            function validar(){
+                var nombre = document.getElementById('nombre').value;
+                if (nombre==null||nombre==("")||nombre==(''))
+                    return true;
+                
+                var email = document.getElementById('email').value;
+                if (email==null||email==("")||email==(''))
+                    return true;
+                
+                var asunto = document.getElementById('asunto').value;
+                if (asunto==null||asunto==("")||asunto==(''))
+                    return true;
+                
+                var mensaje = document.getElementById('mensaje').value;
+                if (mensaje==null||mensaje==("")||mensaje==(''))
+                    return true;
+                
+                spinner();
+                document.getElementById('form').submit();
             }
         </script>
     </head>
     <body>
         <?php include 'header.php'; ?>
+        <div id="spinner" class="wrapper"></div>
+            <script type="text/javascript">
+                function spinner(){
+                    var cl = new CanvasLoader('spinner');
+                    cl.setColor('#f1d761');
+                    cl.setShape('spiral');
+                    cl.setDiameter(64);
+                    cl.setDensity(14);
+                    cl.setRange(1);
+                    cl.setSpeed(1);
+                    cl.setFPS(9);
+                    cl.show();
+
+                    // This bit is only for positioning - not necessary
+                    var loaderObj = document.getElementById("canvasLoader");
+                    loaderObj.style.position = "absolute";
+                    loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
+                    loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
+                }
+            </script>
         <section id="contenedor">
+            <label for="msg" <?php echo $msgId; ?>><?php echo $msg; ?></label>
             <div class="divizquierda formvertical">
-                <form action="enviarEmail.php" method="post">
+                <form id="form" action="enviarEmail.php" method="POST">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
-                    <label for="msg"><?php echo $msg; ?></label>
-                    <input type="text" id="txtnombre" name="txtnombre"  placeholder="Tu nombre" required />
-                    <input type="email" id="txtemail" name="txtemail" placeholder="Tu correo electronico" required />
-                    <input type="text" id="txtasunto" name="txtasunto" placeholder="Asunto" required />
-                    <textarea name="txtconsulta" id="txtconsulta" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
-                    <input type="submit" value="Enviar"></input>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" required /><br>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" required /><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><br>
+                    <button id="button-upload" onclick="return validar()">Enviar</button>
                 </form>
             </div>
             <div class="divderecha">

@@ -35,9 +35,9 @@
         $mail->AddReplyTo($email, $nombre);
 
         if (!$mail->Send()) {
-            header('Location: contactos.php?m=2');
+            header('Location: spinner.php?m=2');
         } else {
-            header('Location: contactos.php?m=1');
+            header('Location: spinner.php?m=1');
         }
         ?>
     </body>
