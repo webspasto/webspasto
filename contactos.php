@@ -78,7 +78,7 @@ if (isset($_GET['m'])){
                     <input type="email" id="email" name="email" placeholder="Tu correo electronico" required /><br>
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><br>
-                    <button id="button-upload" onclick="return validar()">Enviar</button>
+                    <button id="button-upload" title="Enviar" onclick="return validar()">Enviar</button>
                 </form>
             </div>
             <div class="divderecha">
