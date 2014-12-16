@@ -10,13 +10,13 @@
     </div>
     <nav>
         <li>
-            <a title="Inicio" href="index.php">Inicio</a>
+            <a title="Inicio" href="index.php"><img src="img/icon_home.png">Inicio</a>
         </li>
         <li>
-            <a title="Nosotros" href="nosotros.php">Nosotros</a>
+            <a title="Nosotros" href="nosotros.php"><img src="img/icon_us.png">Nosotros</a>
         </li>
         <li>
-            <a title="Contactos" href="contactos.php">Contactos</a>
+            <a title="Contactos" href="contactos.php"><img src="img/icon_contact.png">Contactos</a>
         </li>
     </nav>
 </header>
