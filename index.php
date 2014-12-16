@@ -27,7 +27,14 @@
     <body>
         <?php include 'header.php'; ?>
         <section id="contenedor">
-            <?php include 'principal.php';?>
+            <div class="divsolo">
+                <details>
+                    <summary>
+                        ¿Pregunta?
+                    </summary>
+                    Respuesta
+                </details>
+            </div>
         </section>
         <?php include 'footer.html'; ?>
     </body>
