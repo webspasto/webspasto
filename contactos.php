@@ -19,6 +19,11 @@ if (isset($_GET['m'])){
         <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
+        <script type="text/javascript">
+            function spin(){
+                window.onload=document.getElementById("loading").style.display = "none";
+            }
+        </script>
     </head>
     <body>
         <?php include 'header.php'; ?>
