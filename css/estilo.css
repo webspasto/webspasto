@@ -162,15 +162,19 @@ footer{
     padding: 5px;
     resize: none;
     width: 80%;
-    border: 1px solid #F2E4BD;
-    background: #F8F6E9;
+/*    border: 1px solid #F2E4BD;
+    background: #F8F6E9;*/
+    border: 1px solid #E7E5D8;
+    background: #FDFDFD;
 }
 
 .formvertical input[type=submit]{
     color: #FFFFFF;
     font-weight: bold;
-    border: 1px solid #F2E4BD;
-    background: #F1D661 url(../img/icon_mail.png) no-repeat;
+/*    border: 1px solid #F2E4BD;
+    background: #F1D661 url(../img/icon_mail.png) no-repeat;*/
+    border: 1px solid #FDFDFD;
+    background: #D1D1D1 url(../img/icon_mail.png) no-repeat;
     background-size: 20px;
     background-position: 35% 50%;
 }
@@ -182,8 +186,10 @@ footer{
     -moz-opacity: 0.8;
     -ms-opacity: 0.8;
     -o-opacity: 0.8;
-    border: 1px solid #F2E4BD;
-    background: #F1D661 url(../img/icon_mail.png) no-repeat;
+/*    border: 1px solid #F2E4BD;
+    background: #F1D661 url(../img/icon_mail.png) no-repeat;*/
+    border: 1px solid #FDFDFD;
+    background: #D1D1D1 url(../img/icon_mail.png) no-repeat;
     background-size: 20px;
     background-position: 35% 50%;
 }

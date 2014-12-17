@@ -117,7 +117,7 @@
     border: 0;
     overflow: auto;
     border-radius: 0;
-    border-bottom: 0px solid #f6a828;
+    border-bottom: 0px solid;
 }
 
 /* Component containers

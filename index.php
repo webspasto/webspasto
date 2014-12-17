@@ -64,17 +64,18 @@
                         <h3 class="itemAcordion">¿Quienes somos?</h3>
                         <div>
                             <p>
-                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa dedicada a
-                                la elaboración de herramientas o productos software a la medida en beneficio a pequeñas o medianas empresas.
+                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
+                                el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
                             </p>
+                            <hr>
                         </div>
                         <h3 class="itemAcordion">Nuestros servicios</h3>
                         <div>
                             <p>
-                                Ofrecemos soluciones informaticas a la medida, brindando una herramienta que garantice
-                                al cliente
-                                un completo manejo 
+                                Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
+                                al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
                             </p>
+                            <hr>
                         </div>
                         <h3 class="itemAcordion">Section 3</h3>
                         <div>
@@ -89,6 +90,7 @@
                                 <li>List item two</li>
                                 <li>List item three</li>
                             </ul>
+                            <hr>
                         </div>
                         <h3 class="itemAcordion">Section 4</h3>
                         <div >
@@ -103,6 +105,7 @@
                                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
                                 inceptos himenaeos.
                             </p>
+                            <hr>
                         </div>
                     </div>
                 </div>
