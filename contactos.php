@@ -24,12 +24,6 @@ if (isset($_GET['m'])){
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
         <script src="js/heartcode-canvasloader-min-0.9.1.js"></script>
         <script src="js/operations.js" type="text/javascript"></script>
-
-        <script type="text/javascript">
-            function enviar(){
-                return validar();
-            }
-        </script>
     </head>
     <body>
         <?php include 'header.php'; ?>
@@ -37,13 +31,13 @@ if (isset($_GET['m'])){
         <section id="contenedor">
             <label for="msg" <?php echo $msgId; ?>><?php echo $msg; ?></label>
             <div class="divizquierda formvertical">
-                <form id="form" action="enviarEmail.php" method="POST">
+                <form id="form" onsubmit="javascript:return validar();">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
                     <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" required /><br>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" required /><br>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" required/><br>
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><br>
-                    <button id="button-upload" title="Enviar" onclick="return enviar()">Enviar</button>
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
             <div class="divderecha">

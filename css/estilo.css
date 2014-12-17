@@ -161,7 +161,7 @@ footer{
     background: #F8F6E9;
 }
 
-.formvertical button{
+.formvertical input[type=submit]{
     color: #FFFFFF;
     font-weight: bold;
     border: 1px solid #F2E4BD;
@@ -170,7 +170,7 @@ footer{
     background-position: 35% 50%;
 }
 
-.formvertical button:hover{
+.formvertical input[type=submit]:hover{
     cursor: pointer;
     opacity: 0.8;
     -webkit-opacity: 0.8;
@@ -189,14 +189,6 @@ footer{
     /*background: #DCDCDC;*/
 }
 
-.formvertical input[type=submit]{
-    border: none;
-    background: skyblue;
-}
-
-.formvertical input[type=submit]:hover{
-    background: #6495ED;
-}
 
 .mapa{
     width:100%;

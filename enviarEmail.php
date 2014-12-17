@@ -11,11 +11,25 @@
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "ssl";
+        $mail->SMTPDebug = 1;
         $mail->Host = "ssl://smtp.gmail.com";
         $mail->Port = 465;
         $mail->Username = "webspasto@gmail.com";
         $mail->Password = "Casitegano";
         $mail->Priority = 1;
+        
+        
+        
+/*$mail->IsSendmail();
+$mail->Mailer = "smtp";
+$mail->SMTPDebug = 1;
+$mail->Host = 'mx1.hostinger.es';
+$mail->Port = 2525;
+$mail->SMTPAuth = true;
+$mail->Username = 'webspasto@gmail.com';
+$mail->Password = 'Casitegano';
+$mail->SMTPSecure = '';*/
+        
 
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];

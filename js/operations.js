@@ -1,41 +1,31 @@
 function validar(){
     var nombre = document.getElementById('nombre').value;
-    if (nombre == null || nombre == ("") || nombre == (''))
-        return true;
-
-    var email = document.getElementById('email').value;
-    if (email == null || email == ("") || email == (''))
-        return true;
-    
-    if (email.indexOf("@")<1)
-        return true;
-    
-    var arr = email.split("@");
-    if (arr[1]==null || arr[1]==("") || arr[1]==('') )
-        return true;
-    
-    if (arr[1].indexOf(".")<1)
-        return true;
-    
-    if (arr[1].length>2)
-        return true;
-
     var asunto = document.getElementById('asunto').value;
-    if (asunto == null || asunto == ("") || asunto == (''))
-        return true;
-
     var mensaje = document.getElementById('mensaje').value;
-    if (mensaje == null || mensaje == ("") || mensaje == (''))
-        return true;
+    var email = document.getElementById('email').value;
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (nombre == null || nombre == ("") || nombre == (''))
+        return false;
+    else if (email == null || email == ("") || email == (''))
+        return false;
+    else if (!re.test(email)){
+        alert("Email incorrecto!!");
+        return false;
+    }
+    else if (asunto == null || asunto == ("") || asunto == (''))
+        return false;
 
-    spinner();
-    document.getElementById('form').submit();
-}
+    else if (mensaje == null || mensaje == ("") || mensaje == (''))
+        return false;
 
-function validarEmail( email ) {
-    expr = /^([a-zA-Z0-9_\.\])+\@(([a-zA-Z0-9\])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (!expr.test(email))
-        alert("Error: La dirección de correo " + email + " es incorrecta.");
+    else {
+        spinner();
+        var form =document.getElementById('form');
+        form.action="enviarEmail.php";
+        form.method="POST"
+        form.submit();
+    }
+    
 }
 
 function spinner() {
