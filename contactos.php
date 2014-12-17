@@ -23,52 +23,17 @@ if (isset($_GET['m'])){
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
         <script src="js/heartcode-canvasloader-min-0.9.1.js"></script>
+        <script src="js/operations.js" type="text/javascript"></script>
 
         <script type="text/javascript">
-            function validar(){
-                var nombre = document.getElementById('nombre').value;
-                if (nombre==null||nombre==("")||nombre==(''))
-                    return true;
-                
-                var email = document.getElementById('email').value;
-                if (email==null||email==("")||email==(''))
-                    return true;
-                
-                var asunto = document.getElementById('asunto').value;
-                if (asunto==null||asunto==("")||asunto==(''))
-                    return true;
-                
-                var mensaje = document.getElementById('mensaje').value;
-                if (mensaje==null||mensaje==("")||mensaje==(''))
-                    return true;
-                
-                spinner();
-                document.getElementById('form').submit();
+            function enviar(){
+                return validar();
             }
         </script>
     </head>
     <body>
         <?php include 'header.php'; ?>
         <div id="spinner" class="wrapper"></div>
-            <script type="text/javascript">
-                function spinner(){
-                    var cl = new CanvasLoader('spinner');
-                    cl.setColor('#f1d761');
-                    cl.setShape('spiral');
-                    cl.setDiameter(64);
-                    cl.setDensity(14);
-                    cl.setRange(1);
-                    cl.setSpeed(1);
-                    cl.setFPS(9);
-                    cl.show();
-
-                    // This bit is only for positioning - not necessary
-                    var loaderObj = document.getElementById("canvasLoader");
-                    loaderObj.style.position = "absolute";
-                    loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
-                    loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
-                }
-            </script>
         <section id="contenedor">
             <label for="msg" <?php echo $msgId; ?>><?php echo $msg; ?></label>
             <div class="divizquierda formvertical">
@@ -78,7 +43,7 @@ if (isset($_GET['m'])){
                     <input type="email" id="email" name="email" placeholder="Tu correo electronico" required /><br>
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><br>
-                    <button id="button-upload" title="Enviar" onclick="return validar()">Enviar</button>
+                    <button id="button-upload" title="Enviar" onclick="return enviar()">Enviar</button>
                 </form>
             </div>
             <div class="divderecha">
