@@ -7,22 +7,6 @@
         <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
-        <script type="text/javascript">
-            function cambiarPantalla(str) {
-                var conexion;
-                if (window.XMLHttpRequest)
-                    conexion = new XMLHttpRequest();
-                else
-                    conexion = new ActiveXObjet("Microsoft.XMLHttpRequest");
-
-                conexion.onreadystatechange = function () {
-                    if (conexion.readyState == 4 && conexion.status == 200)
-                        document.getElementById('contenedor').innerHTML = conexion.responseText;
-                }
-                conexion.open("GET", "pantallas.php?q=" + str, true);
-                conexion.send();
-            }
-        </script>
     </head>
     <body>
         <?php include 'header.php'; ?>
