@@ -91,9 +91,10 @@
     cursor: pointer;
     position: relative;
     margin: 0 0 0 0;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     min-height: 0; /* support: IE7 */
-    font-size: 95%;
+    font-size: 100%;
 }
 .ui-accordion .ui-accordion-icons {
     padding-left: 2em;
@@ -105,11 +106,13 @@
     position: absolute;
     left: .5em;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -10px;
 }
 .ui-accordion .ui-accordion-content {
     margin: 1em 2.2em;
-    font-size: 16px;
+    margin-top: -10px;
+    font-size: 90%;
+    color: black;
     text-align: justify;
     border: 0;
     overflow: auto;

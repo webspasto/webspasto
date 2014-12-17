@@ -61,22 +61,19 @@
             <div class="divsolo">
                 <div class="sections">
                     <div id="accordion">
-                        <h3 class="itemAcordion">Section 1</h3>
+                        <h3 class="itemAcordion">¿Quienes somos?</h3>
                         <div>
                             <p>
-                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa dedicada a
+                                la elaboración de herramientas o productos software a la medida en beneficio a pequeñas o medianas empresas.
                             </p>
                         </div>
-                        <h3 class="itemAcordion">Section 2</h3>
+                        <h3 class="itemAcordion">Nuestros servicios</h3>
                         <div>
                             <p>
-                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                                suscipit faucibus urna.
+                                Ofrecemos soluciones informaticas a la medida, brindando una herramienta que garantice
+                                al cliente
+                                un completo manejo 
                             </p>
                         </div>
                         <h3 class="itemAcordion">Section 3</h3>
