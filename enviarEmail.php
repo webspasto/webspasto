@@ -5,6 +5,9 @@
     </head>
     <body>
         <?php
+        if (!session_start())
+            session_start();
+        
         include("lib/class.phpmailer.php");
         include("lib/class.smtp.php");
         $mail = new PHPMailer();
@@ -49,9 +52,13 @@ $mail->SMTPSecure = '';*/
         $mail->AddReplyTo($email, $nombre);
 
         if (!$mail->Send()) {
-            header('Location: contactos.php?m=2');
+            if (session_start()){
+                $_SESSION['msg']="Gracias, su mensaje fue enviado con éxito.";
+                $_SESSION['class']="class='msg-exito'";
+            }
+            header('Location: contactos.php');
         } else {
-            header('Location: contactos.php?m=1');
+            header('Location: contactos.php');
         }
         ?>
     </body>
