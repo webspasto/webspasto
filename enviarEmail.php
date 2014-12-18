@@ -6,10 +6,10 @@
 <body>
     <?php
 
-    // echo $_GET['nombre']."<br>";
-    // echo $_GET['asunto']."<br>";
-    // echo $_GET['email']."<br>";
-    // echo $_GET['mensaje']."<br>";
+     // echo $_GET['nombre']."<br>";
+     // echo $_GET['asunto']."<br>";
+     // echo $_GET['email']."<br>";
+     // echo $_GET['mensaje']."<br>";
 
     include("lib/class.phpmailer.php");
     include("lib/class.smtp.php");
@@ -17,12 +17,12 @@
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "ssl";
-    $mail->SMTPDebug = 1;
+    //$mail->SMTPDebug = 1;
     $mail->Host = "ssl://smtp.gmail.com";
     $mail->Port = 465;
     $mail->Username = "webspasto@gmail.com";
     $mail->Password = "Casitegano";
-    $mail->Priority = 1;
+   //$mail->Priority = 1;
 
 
 
@@ -55,9 +55,9 @@ $mail->SetFrom($email, $nombre);
 $mail->AddReplyTo($email, $nombre);
 
 if (!$mail->Send()) {
-    echo'Mensaje NO enviado.';
+    echo'Mensaje NO enviado';
 } else {
-    echo'Mensaje enviado.';
+    echo'Mensaje enviado';
 }
 ?>
 </body>

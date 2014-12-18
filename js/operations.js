@@ -20,8 +20,6 @@ function validar(){
     }
     else{nombremsg.textContent="";}
         
-        
-    
     if (email == null || email.value == ("") || email.value == ('')){
         email.focus(); 
         emailmsg.textContent="Este campo es obligatorio";
@@ -49,7 +47,8 @@ function validar(){
         return false;
     }
     else{ mensajemsg.textContent="";}
-
+    var spinnerimg = document.getElementById('loading');
+    spinnerimg.src="img/loading.gif";
     var conexion;
     if (window.XMLHttpRequest)
         conexion = new XMLHttpRequest();
@@ -57,27 +56,18 @@ function validar(){
         conexion = new ActiveXObjet("Microsoft.XMLHttpRequest");
 
     conexion.onreadystatechange = function () {
-        if (conexion.readyState == 4 && conexion.status == 200)
+        if (conexion.readyState == 4 && conexion.status == 200){
             document.getElementById('lblmsg').innerHTML = conexion.responseText;
-
+            nombre.value="";
+            email.value="";
+            asunto.value=""
+            mensaje.value="";   
+            spinnerimg.src="";
+        }           
     }
 
     conexion.open("GET", "enviarEmail.php?nombre="+nombre.value+"&asunto="+asunto.value+"&mensaje="+mensaje.value+"&email="+email.value, true);
     conexion.send();
-    nombre.value="";
-    email.value="";
-    asunto.value=""
-    mensaje.value="";
-
-    //else {
-        //spinner();
-        //return true;       
-        /*var form =document.getElementById('form');
-        form.action="enviarEmail.php";
-        form.method="POST";
-        form.submit();*/
-   // }
-    
 }
 
 function spinner() {

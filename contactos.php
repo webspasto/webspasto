@@ -16,13 +16,16 @@
         <section id="contenedor">
             <label id="lblmsg" for="msg"></label>
             <div class="divizquierda formvertical">
-                <form id="form" method="GET" >
+                <form id="form" method="POST">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
-                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" required /><label style="color:red;"for="nombre" id="nombremsg"></label><br>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" required/><label style="color:red;"for="nombre" id="emailmsg"></label><br>
-                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><label style="color:red;"for="nombre" id="asuntomsg"></label><br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
-                    <button title="Enviar" onclick="javascript:return validar();">Enviar</button>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre"  /><label style="color:red;"for="nombre" id="nombremsg"></label><br>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" /><label style="color:red;"for="nombre" id="emailmsg"></label><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto"  /><label style="color:red;"for="nombre" id="asuntomsg"></label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" ></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
+                    <div class="centrar">
+                        <img id="loading" src="" >
+                    </div>
+                    <a id="submit" onclick="javascript:return validar();">Enviar</a>
                 </form>
             </div>
             <div class="divderecha">
@@ -52,35 +55,9 @@
             <br><br>
             <div class="divsolo">
                 <h2 style="text-align:center;">Ubicanos</h2>
-                <!-- <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.9540110714125!2d-77.27768199999991!3d1.204665500573275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed4999e7580a9%3A0x7e5550bfec06119e!2sCalle+14+%23+16-2%2C+Pasto%2C+Nari%C3%B1o%2C+Colombia!5e1!3m2!1ses-419!2ses!4v1418515498645" frameborder="0"></iframe>	 -->
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.9540110714125!2d-77.27768199999991!3d1.204665500573275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed4999e7580a9%3A0x7e5550bfec06119e!2sCalle+14+%23+16-2%2C+Pasto%2C+Nari%C3%B1o%2C+Colombia!5e1!3m2!1ses-419!2ses!4v1418515498645" frameborder="0"></iframe>
             </div>
         </section>
         <?php include 'footer.html'; ?>
-         <script type="text/javascript">
-            function enviarEmail() {
-                if(!validar())
-                    return false;
-                else{
-                    var conexion;
-                    if (window.XMLHttpRequest)
-                        conexion = new XMLHttpRequest();
-                    else
-                        conexion = new ActiveXObjet("Microsoft.XMLHttpRequest");
-
-                    conexion.onreadystatechange = function () {
-                        if (conexion.readyState == 4 && conexion.status == 200)
-                            document.getElementById('lblmsg').innerHTML = conexion.responseText;
-
-                    }
-                    var nombre = document.getElementById('nombre').value;
-                    var asunto = document.getElementById('asunto').value;
-                    var mensaje = document.getElementById('mensaje').value;
-                    var email = document.getElementById('email').value;
-                    conexion.open("GET", "enviarEmail.php?nombre="+document.getElementById('nombre').value+"&asunto="+asunto+"&mensaje="+mensaje+"&email="+email, true);
-                    conexion.send();
-                    limpiar();
-                }      
-            }
-        </script>
     </body>
 </html>
