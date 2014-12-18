@@ -14,19 +14,22 @@
         <?php include 'header.php'; ?>
         <div id="spinner" class="wrapper"></div>
         <section id="contenedor">
-            <label id="lblmsg" for="msg"></label>
+            <label id="lblmsg" for="msg">&nbsp;</label>
             <div class="divizquierda formvertical">
                 <form id="form" method="POST">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
-                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre"  /><label style="color:red;"for="nombre" id="nombremsg"></label><br>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" /><label style="color:red;"for="nombre" id="emailmsg"></label><br>
-                    <input type="text" id="asunto" name="asunto" placeholder="Asunto"  /><label style="color:red;"for="nombre" id="asuntomsg"></label><br>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre"  />
+                    <label style="color:red;"for="nombre" id="nombremsg"></label><br>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" />
+                    <label style="color:red;"for="nombre" id="emailmsg"></label><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" />
+                    <label style="color:red;"for="nombre" id="asuntomsg"></label><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" ></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
-                    <div class="centrar">
-                        <img id="loading" src="" >
-                    </div>
                     <a id="submit" onclick="javascript:return validar();">Enviar</a>
                 </form>
+                <div class="centrar">
+                    <img id="loading" src="img/vacio.png" >
+                </div>
             </div>
             <div class="divderecha">
                 <h2 style="text-align:center;">Datos de Contacto</h2>

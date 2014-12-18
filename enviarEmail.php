@@ -5,12 +5,6 @@
 </head>
 <body>
     <?php
-
-     // echo $_GET['nombre']."<br>";
-     // echo $_GET['asunto']."<br>";
-     // echo $_GET['email']."<br>";
-     // echo $_GET['mensaje']."<br>";
-
     include("lib/class.phpmailer.php");
     include("lib/class.smtp.php");
     $mail = new PHPMailer();
@@ -24,41 +18,38 @@
     $mail->Password = "Casitegano";
    //$mail->Priority = 1;
 
+    /*$mail->IsSendmail();
+    $mail->Mailer = "smtp";
+    $mail->SMTPDebug = 1;
+    $mail->Host = 'mx1.hostinger.es';
+    $mail->Port = 2525;
+    $mail->SMTPAuth = true;
+    $mail->Username = 'webspasto@gmail.com';
+    $mail->Password = 'Casitegano';
+    $mail->SMTPSecure = '';*/
 
+    $nombre = $_GET['nombre'];
+    $email = $_GET['email'];
+    $asunto = $_GET['asunto'];
+    $consulta = $_GET['mensaje'];
+    $mail->From = $email;
+    $mail->FromName = $nombre;
+    $mail->Subject = $asunto;
+    $mail->AltBody = "Mensaje de WP";
 
-/*$mail->IsSendmail();
-$mail->Mailer = "smtp";
-$mail->SMTPDebug = 1;
-$mail->Host = 'mx1.hostinger.es';
-$mail->Port = 2525;
-$mail->SMTPAuth = true;
-$mail->Username = 'webspasto@gmail.com';
-$mail->Password = 'Casitegano';
-$mail->SMTPSecure = '';*/
+    $mensaje = "<div style='padding:5px; background:#C6C6C6; border:0px solid black;''><div><p><strong>Nombre:</strong> " . $nombre . "</p></div><div><p><strong>Email: </strong>" . $email . "</p></div><div style='text-align:justify;'><p><strong>Consulta: </strong>" . $consulta . "</p></div></div>";
+    $mail->MsgHTML($mensaje);
+    $mail->AddAddress("webspasto@gmail.com", "");
+    $mail->IsHTML(true);
 
+    $mail->SetFrom($email, $nombre);
+    $mail->AddReplyTo($email, $nombre);
 
-$nombre = $_GET['nombre'];
-$email = $_GET['email'];
-$asunto = $_GET['asunto'];
-$consulta = $_GET['mensaje'];
-$mail->From = $email;
-$mail->FromName = $nombre;
-$mail->Subject = $asunto;
-$mail->AltBody = "Mensaje de WP";
-
-$mensaje = "<div style='padding:5px; background:#C6C6C6; border:0px solid black;''><div><p><strong>Nombre:</strong> " . $nombre . "</p></div><div><p><strong>Email: </strong>" . $email . "</p></div><div style='text-align:justify;'><p><strong>Consulta: </strong>" . $consulta . "</p></div></div>";
-$mail->MsgHTML($mensaje);
-$mail->AddAddress("webspasto@gmail.com", "");
-$mail->IsHTML(true);
-
-$mail->SetFrom($email, $nombre);
-$mail->AddReplyTo($email, $nombre);
-
-if (!$mail->Send()) {
-    echo'Mensaje NO enviado';
-} else {
-    echo'Mensaje enviado';
-}
+    if (!$mail->Send()) {
+        echo 'Lo sentimos, su mensaje no pudo ser enviado.';
+    } else {
+        echo 'Gracias, su mensaje ha sido enviado.';
+    }
 ?>
 </body>
 </html>

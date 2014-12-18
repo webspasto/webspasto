@@ -62,7 +62,7 @@ function validar(){
             email.value="";
             asunto.value=""
             mensaje.value="";   
-            spinnerimg.src="";
+            spinnerimg.src="img/vacio.png";
         }           
     }
 
