@@ -90,8 +90,6 @@ function spinner() {
     cl.setSpeed(1);
     cl.setFPS(9);
     cl.show();
-    
-    cl.
 
 
     // This bit is only for positioning - not necessary
