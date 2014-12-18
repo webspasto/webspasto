@@ -6,9 +6,12 @@ function validar(){
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (nombre == null || nombre == ("") || nombre == (''))
         return false;
+    
     else if (email == null || email == ("") || email == (''))
         return false;
+    
     else if (!re.test(email)){
+        document.getElementById('email').focus();
         alert("Email incorrecto!!");
         return false;
     }
@@ -22,7 +25,7 @@ function validar(){
         spinner();
         var form =document.getElementById('form');
         form.action="enviarEmail.php";
-        form.method="POST"
+        form.method="POST";
         form.submit();
     }
     
