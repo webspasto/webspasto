@@ -154,11 +154,6 @@ footer{
     margin: 0 auto 0;
 }
 
-#lblmsg{
-    font-weight: bold;
-    color: black;
-}
-
 .formvertical input,textarea,a#submit{
     font-size: 14px;
     border-radius: 5px;
@@ -206,7 +201,7 @@ footer{
 }
 
 .formvertical input:focus,textarea:focus,button:focus,a#submit:focus{
-    border: 1px solid #F2E4BD;
+    border: 1px solid #000;
     /*background: #DCDCDC;*/
 }
 

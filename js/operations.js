@@ -47,6 +47,7 @@ function validar(){
         return false;
     }
     else{ mensajemsg.textContent="";}
+    document.getElementById('submit2').disabled = true;
     var spinnerimg = document.getElementById('loading');
     spinnerimg.src="img/loading.gif";
     var conexion;
@@ -62,6 +63,7 @@ function validar(){
             email.value="";
             asunto.value=""
             mensaje.value="";   
+            document.getElementById('submit2').disabled = false;
             spinnerimg.src="img/vacio.png";
         }           
     }
