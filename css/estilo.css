@@ -198,7 +198,37 @@ footer{
     background-position: 35% 50%;
 }
 
-.formvertical input:focus,textarea:focus{
+.formvertical button{
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #F2E4BD;
+    background-color: #F1D661;
+    //border: 1px solid #FDFDFD;
+    //background-color: #D1D1D1;
+    background-image: url(../img/icon_mail.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 35% 50%;
+}
+
+.formvertical button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -moz-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -o-opacity: 0.8;
+    border: 1px solid #F2E4BD;
+    background-color: #F1D661;
+    //border: 1px solid #FDFDFD;
+    //background-color: #D1D1D1;
+    background-image: url(../img/icon_mail.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 35% 50%;
+}
+
+.formvertical input:focus,textarea:focus,button:focus{
     border: 1px solid transparent;
     /*background: #DCDCDC;*/
 }

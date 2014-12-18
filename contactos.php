@@ -1,18 +1,3 @@
-<?php
-$msg = "";
-$msgId= "";
-if (isset($_GET['m'])){
-    $get = $_GET['m'];
-    if ($get==1){
-        $msg="Gracias, su mensaje fue enviado con éxito.";
-        $msgId="class='msg-exito'";
-    }
-    else if ($get==2){
-        $msg="Lo sentimos, su mensaje no pudo ser enviado.";
-        $msgId="class='msg-error'";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -34,15 +19,10 @@ if (isset($_GET['m'])){
                 <form id="form" method="GET" >
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
                     <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" required /><label style="color:red;"for="nombre" id="nombremsg"></label><br>
-
-                    <p><div id="txtHint"></div>
                     <input type="email" id="email" name="email" placeholder="Tu correo electronico" required/><label style="color:red;"for="nombre" id="emailmsg"></label><br>
-                    </p>
-                    
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><label style="color:red;"for="nombre" id="asuntomsg"></label><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
-                    <input type="submit" value="Enviar">
-                    <button onclick="javascript:return validar();">enviar</button>
+                    <button title="Enviar" onclick="javascript:return validar();">Enviar</button>
                 </form>
             </div>
             <div class="divderecha">
