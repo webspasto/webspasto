@@ -34,7 +34,11 @@ if (isset($_GET['m'])){
                 <form id="form" onsubmit="javascript:return validar();">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
                     <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" required /><br>
+
+                    <p><div id="txtHint"></div>
                     <input type="email" id="email" name="email" placeholder="Tu correo electronico" required/><br>
+                    </p>
+                    
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" required /><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea><br>
                     <input type="submit" value="Enviar">
