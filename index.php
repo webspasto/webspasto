@@ -77,7 +77,7 @@
                             </p>
                             <hr>
                         </div>
-                        <h3 class="itemAcordion">Section 3</h3>
+                        <h3 class="itemAcordion">¿Por que ?</h3>
                         <div>
                             <p>
                                 Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
