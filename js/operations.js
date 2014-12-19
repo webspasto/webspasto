@@ -177,6 +177,21 @@ function limpiarMensajes(){
 }
 
 function overlay() {
-    el = document.getElementById("overlay");
-    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+    e = document.getElementsByTagName('body');
+    d = document.getElementById('blook');
+    el = document.getElementById('overlay');
+    if (el.style.visibility == "visible"){
+        e[0].style.background = "white";
+        d.style.opacity = "1";
+        el.style.visibility = "hidden";
+        el.style.opacity = "1";
+        //e[0].style.visibility = "visible";
+    }
+    else{
+        //e[0].style.visibility = "hidden";
+        e[0].style.background = "grey";
+        d.style.opacity = "0.5";
+        el.style.visibility = "visible";
+        el.style.opacity = "1";
+    }
 }

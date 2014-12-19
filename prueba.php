@@ -25,12 +25,14 @@
         </script>
     </head>
     <body>
-        <a onclick='overlay()'>Click here to show the overlay</a>
+        <div id="blook">
+            <a onclick='overlay()'>Click here to show the overlay</a>
+        </div>
         <div id="overlay">
             <div>
                 <a onclick='overlay()'>close</a>
                 <p>Content you want the user to see goes here.</p>
             </div>
-       </div>
+        </div>
     </body>
 </html>
