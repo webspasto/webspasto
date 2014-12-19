@@ -175,3 +175,8 @@ function limpiarMensajes(){
     var mensajemsg=document.getElementById('mensajemsg').innerHTML="";
     var emailmsg=document.getElementById('emailmsg').innerHTML="";
 }
+
+function overlay() {
+    el = document.getElementById("overlay");
+    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
