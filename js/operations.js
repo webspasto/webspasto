@@ -47,9 +47,13 @@ function validar(){
         return false;
     }
     else{ mensajemsg.textContent="";}
-    document.getElementById('submit2').disabled = true;
+    var enlace = document.getElementById('submit');
+    enlace.setAttribute("onclick","");
+    enlace.className = "ocultar"; 
+
     var spinnerimg = document.getElementById('loading');
     spinnerimg.src="img/spinner.gif";
+
     var conexion;
     if (window.XMLHttpRequest)
         conexion = new XMLHttpRequest();
@@ -63,8 +67,9 @@ function validar(){
             email.value="";
             asunto.value=""
             mensaje.value="";   
-            document.getElementById('submit2').disabled = false;
             spinnerimg.src="img/vacio.png";
+            enlace.setAttribute("onclick","validar();");
+            enlace.className = "";
         }           
     }
 
