@@ -52,7 +52,7 @@ function validar(){
     enlace.className = "ocultar"; 
 
     var spinnerimg = document.getElementById('loading');
-    spinnerimg.src="img/spinner.gif";
+    spinnerimg.src="img/loader.gif";
 
     var conexion;
     if (window.XMLHttpRequest)
@@ -107,4 +107,71 @@ function spinner() {
     loaderObj.style.position = "absolute";
     loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
     loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
+}
+
+function validarNombre(){
+    var nombre = document.getElementById('nombre');
+    var nombremsg=document.getElementById('nombremsg');
+    limpiarMensajes();
+    if (nombre == null || nombre.value == ("") || nombre.value == ('')){
+        //nombre.focus();
+        nombremsg.textContent="Este campo es obligatorio";
+        return true;
+    }    
+}
+
+function validarEmail(){
+    var email = document.getElementById('email');
+    var emailmsg=document.getElementById('emailmsg');
+    emailmsg.textContent="";
+    limpiarMensajes();
+    if (email == null || email.value == ("") || email.value == ('')){
+        //email.focus();
+        emailmsg.textContent="Este campo es obligatorio";
+        return true;
+    }
+    else {
+        if (esEmail(email)){
+            //email.focus();
+            emailmsg.textContent="Email incorrecto!!";
+            return true;
+        }
+    }
+}
+
+function esEmail(email){
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(email.value)){
+        //email.focus();
+        return true;
+    }
+}
+
+function validarAsunto(){
+    var asunto = document.getElementById('asunto');
+    var asuntomsg=document.getElementById('asuntomsg');
+    limpiarMensajes();
+    if (asunto == null || asunto.value == ("") || asunto.value == ('')){
+        //asunto.focus();
+        asuntomsg.textContent="Este campo es obligatorio";
+        return true;
+    }    
+}
+
+function validarMensaje(){
+    var mensaje = document.getElementById('mensaje');
+    var mensajemsg=document.getElementById('mensajemsg');
+    limpiarMensajes();
+    if (mensaje == null || mensaje.value == ("") || mensaje.value == ('')){
+        //mensaje.focus();
+        mensajemsg.textContent="Este campo es obligatorio";
+        return true;
+    }    
+}
+
+function limpiarMensajes(){
+    var nombremsg=document.getElementById('nombremsg').innerHTML="";
+    var asuntomsg=document.getElementById('asuntomsg').innerHTML="";
+    var mensajemsg=document.getElementById('mensajemsg').innerHTML="";
+    var emailmsg=document.getElementById('emailmsg').innerHTML="";
 }

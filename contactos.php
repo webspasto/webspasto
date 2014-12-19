@@ -17,13 +17,14 @@
             <div class="divizquierda formvertical">
                 <form id="form" method="POST">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
-                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" />
+                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" onkeypress="if(event.keyCode==13){return validar();}" />
                     <label style="color:red;"for="nombre" id="nombremsg"></label><br>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" />
+                    <input type="email" id="email" name="email" placeholder="Tu correo electronico" onkeypress="if(event.keyCode==13){return validar();}" />
                     <label style="color:red;"for="nombre" id="emailmsg"></label><br>
-                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" />
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" onkeypress="if(event.keyCode==13){return validar();}" />
                     <label style="color:red;"for="nombre" id="asuntomsg"></label><br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" ></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" maxlength="500"></textarea>
+                    <label style="color:red;"for="nombre" id="mensajemsg"></label><br>
                     <a id="submit" onclick="javascript:return validar();">Enviar<img id="loading" src="img/vacio.png"></a>
                 </form>
                 <label id="lblmsg" for="msg">&nbsp;</label><br>
