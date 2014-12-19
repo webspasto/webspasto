@@ -181,7 +181,7 @@ function overlay() {
     d = document.getElementById('blook');
     el = document.getElementById('overlay');
     if (el.style.visibility == "visible"){
-        e[0].style.background = "white";
+        e[0].style.background = "url('img/vacio.png')";
         d.style.opacity = "1";
         el.style.visibility = "hidden";
         el.style.opacity = "1";
@@ -189,7 +189,7 @@ function overlay() {
     }
     else{
         //e[0].style.visibility = "hidden";
-        e[0].style.background = "grey";
+        e[0].style.background = "url('img/modal.png')";
         d.style.opacity = "0.5";
         el.style.visibility = "visible";
         el.style.opacity = "1";
