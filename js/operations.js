@@ -72,6 +72,19 @@ function validar(){
     conexion.send();
 }
 
+function limpiarContacto(){
+    document.getElementById('nombre').innerHTML="";
+    document.getElementById('nombremsg').innerHTML="";
+    document.getElementById('asunto').innerHTML="";
+    document.getElementById('asuntomsg').innerHTML="";
+    document.getElementById('mensaje').innerHTML="";
+    document.getElementById('mensajemsg').innerHTML="";
+    document.getElementById('email').innerHTML="";
+    document.getElementById('emailmsg').innerHTML="";
+    document.getElementById('loading').src="img/vacio.png";
+    document.getElementById('lblmsg').innerHTML="";
+}
+
 function spinner() {
     var cl = new CanvasLoader('spinner');
     cl.setColor('#f1d761');

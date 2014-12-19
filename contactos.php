@@ -14,11 +14,10 @@
         <?php include 'header.php'; ?>
         <div id="spinner" class="wrapper"></div>
         <section id="contenedor">
-            <label id="lblmsg" for="msg">&nbsp;</label>
             <div class="divizquierda formvertical">
                 <form id="form" method="POST">
                     <h2 style="text-align:center;">Enviamos tu Petición</h2>
-                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre"  />
+                    <input type="text" id="nombre" name="nombre"  placeholder="Tu nombre" />
                     <label style="color:red;"for="nombre" id="nombremsg"></label><br>
                     <input type="email" id="email" name="email" placeholder="Tu correo electronico" />
                     <label style="color:red;"for="nombre" id="emailmsg"></label><br>
@@ -28,9 +27,7 @@
 <!--                    <a id="submit"  onclick="javascript:return validar();">Enviar</a>-->
                     <button id="submit2" onclick="javascript:return validar();">Enviar<img id="loading" src="img/vacio.png"></button>
                 </form>
-                <div class="centrar">
-                    <!--<img id="loading" src="img/vacio.png" >-->
-                </div>
+                <label id="lblmsg" for="msg">&nbsp;</label><br>
             </div>
             <div class="divderecha">
                 <h2 style="text-align:center;">Datos de Contacto</h2>

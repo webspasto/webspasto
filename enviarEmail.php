@@ -46,9 +46,9 @@
     $mail->AddReplyTo($email, $nombre);
 
     if (!$mail->Send()) {
-        echo "<span style='color: red; font-weight: bold;'>Lo sentimos, su mensaje no pudo ser enviado.</span>";
+        echo "<span style='color: red;'>Error, su mensaje no pudo ser enviado.</span><br><a id='amsg' onclick='javascript:limpiarContacto();'><img id='imgmsg' title='Limpiar' src='img/img_error.png'></a>";
     } else {
-        echo "<span style='color: green; font-weight: bold;'>Gracias, su mensaje ha sido enviado.</span>";
+        echo "<span style='color: green;'>Gracias, su mensaje ha sido enviado.</span><br><a id='amsg' title='Limpiar' onclick='javascript:limpiarContacto();'><img id='imgmsg' src='img/img_exito.png'></a>";
     }
 ?>
 </body>
