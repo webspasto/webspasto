@@ -49,7 +49,7 @@ function validar(){
     else{ mensajemsg.textContent="";}
     document.getElementById('submit2').disabled = true;
     var spinnerimg = document.getElementById('loading');
-    spinnerimg.src="img/loading.gif";
+    spinnerimg.src="img/spinner.gif";
     var conexion;
     if (window.XMLHttpRequest)
         conexion = new XMLHttpRequest();

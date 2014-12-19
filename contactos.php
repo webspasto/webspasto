@@ -25,11 +25,11 @@
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" />
                     <label style="color:red;"for="nombre" id="asuntomsg"></label><br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu consulta" ></textarea><label style="color:red;"for="nombre" id="mensajemsg"></label><br>
-                    <a id="submit"  onclick="javascript:return validar();">Enviar</a>
-                    <button id="submit2" onclick="javascript:return validar();">Enviar</button>
+<!--                    <a id="submit"  onclick="javascript:return validar();">Enviar</a>-->
+                    <button id="submit2" onclick="javascript:return validar();">Enviar<img id="loading" src="img/vacio.png"></button>
                 </form>
                 <div class="centrar">
-                    <img id="loading" src="img/vacio.png" >
+                    <!--<img id="loading" src="img/vacio.png" >-->
                 </div>
             </div>
             <div class="divderecha">
