@@ -7,8 +7,8 @@
         <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
-        <script src="js/heartcode-canvasloader-min-0.9.1.js"></script>
         <script src="js/operations.js" type="text/javascript"></script>
+        <script src="js/javascript.js" type="text/javascript"></script>
     </head>
     <body>
         <?php include 'header.php'; ?>

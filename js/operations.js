@@ -61,8 +61,9 @@ function validar(){
         conexion = new ActiveXObjet("Microsoft.XMLHttpRequest");
 
     conexion.onreadystatechange = function () {
-        if (conexion.readyState == 4 && conexion.status == 200){
-            document.getElementById('lblmsg').innerHTML = conexion.responseText;
+        if (conexion.readyState == 4 && conexion.status == 200){         
+            document.getElementById('lblmsg').innerHTML = conexion.responseText;            
+            mostrar('lblmsg',1,45,319,1,0.5);
             nombre.value="";
             email.value="";
             asunto.value=""
@@ -70,6 +71,7 @@ function validar(){
             spinnerimg.src="img/vacio.png";
             enlace.setAttribute("onclick","validar();");
             enlace.className = "";
+            setTimeout("ocultar('lblmsg')",3000);
         }           
     }
 
