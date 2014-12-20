@@ -56,8 +56,8 @@
         </style>
     </head>
     <body>
-        <div id="idioma"><a href="home.php" ><img title="Inglés" src="img/eng.png"></a></div>
-        <?php include 'header.php'; ?>
+        <div id="idioma"><a href="index.php" ><img title="Español" src="img/esp.png"></a></div>
+        <?php include 'header.en.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
                 <div class="sections">
@@ -112,6 +112,6 @@
                 </div>
             </div>
         </section>
-        <?php include 'footer.html'; ?>
+        <?php include 'footer.en.html'; ?>
     </body>
 </html>

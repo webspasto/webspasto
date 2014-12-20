@@ -9,8 +9,8 @@
         <link rel="shortcun icon" href="img/favicon.png" type="image/png">
     </head>
     <body>
-        <div id="idioma"><a href="us.php" ><img title="Inglés" src="img/eng.png"></a></div>
-        <?php include 'header.php'; ?>
+        <div id="idioma"><a href="nosotros.php" ><img title="Español" src="img/esp.png"></a></div>
+        <?php include 'header.en.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
                 <div class="divsolo">
@@ -23,6 +23,6 @@
                 </div>
             </div>
         </section>
-        <?php include 'footer.html'; ?>
+        <?php include 'footer.en.html'; ?>
     </body>
 </html>
