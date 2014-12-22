@@ -58,19 +58,31 @@ function animar(idElemento){
 	}
 }
 
-function acordeon(idElementoAnimar,idDivPadre)
+function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 {
     abrir = false;
     otroAbierto = false;
+    //titulo =document.getElementById(idTituloImg);  
+
     if(!estaAbierto(idElementoAnimar))
         abrir=true;
+
+    
+
     padre = document.getElementById(idDivPadre);  
         array = padre.getElementsByTagName('div');
+        
         for(i = 0; i<array.length ;i++){
             div = array[i];
             id=div.getAttribute('id')
             if(estaAbierto(id) && id !=idElementoAnimar){
             	setTimeout("ocultar('"+id+"',5)",1); 
+            	setTimeout(function() {
+            		imagen = padre.getElementsByClassName('tituloAbierto')[0];
+			        imagen.className="";
+	            	imagen.src="img/quiestion_open.png";
+	            	
+            	},200,padre);
             	otroAbierto=true;
             }
                 
@@ -78,10 +90,25 @@ function acordeon(idElementoAnimar,idDivPadre)
     w = 500;
     if(!otroAbierto){ w=0;}
 
-    if(abrir)
-        setTimeout("mostrar('"+idElementoAnimar+"',1,200,800,1,3)",w); 
-    else
-        setTimeout("ocultar('"+idElementoAnimar+"',5)",1); 
+    if(abrir){
+    	setTimeout("mostrar('"+idElementoAnimar+"',1,200,800,1,3)",w); 
+    	setTimeout(function() {
+	    	h2=elementoAccion.getElementsByTagName('h2')[0];
+	        imagen=h2.getElementsByTagName('img')[0];
+	    	imagen.src="img/quiestion_close.png";
+	    	imagen.className="tituloAbierto";
+	    },200,elementoAccion);
+    }     
+    else{
+    	setTimeout("ocultar('"+idElementoAnimar+"',5)",1); 
+    	setTimeout(function() {
+	    	h2=elementoAccion.getElementsByTagName('h2')[0];
+	        imagen=h2.getElementsByTagName('img')[0];
+	    	imagen.src="img/quiestion_open.png";
+	    	imagen.className="";
+    	},200,elementoAccion);
+    }
+        
 }
 function estaAbierto(idElemento){
     elemento = document.getElementById(idElemento);  
@@ -93,3 +120,4 @@ function estaAbierto(idElemento){
         return false;
     return true;
 }
+
