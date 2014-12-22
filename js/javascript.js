@@ -92,7 +92,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
             div = array[i];
             id=div.getAttribute('id')
             if(estaAbierto(id) && id !=idElementoAnimar){
-            	setTimeout("cerrarAcordeon('"+id+"',5)",1); 
+            	setTimeout("cerrarAcordeon('"+id+"',10)",001); 
             	setTimeout(function() {
             		h2 = padre.getElementsByClassName('tituloAbierto')[0];
 			        h2.style.font="normal normal 20px sans-serif";	
@@ -100,16 +100,16 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
             		imagen = h2.getElementsByTagName('img')[0];
 			        imagen.className="";			   
 	            	imagen.src="img/quiestion_open.png";
-            	},200,padre);
+            	},100,padre);
             	otroAbierto=true;
             }
                 
     }
-    w = 500;
+    w = 100;
     if(!otroAbierto){ w=0;}
 
     if(abrir){
-    	setTimeout("abrirAcordeon('"+idElementoAnimar+"',1,200,800,1,3)",w); 
+    	setTimeout("abrirAcordeon('"+idElementoAnimar+"',1,200,800,1,005)",w); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
 	    	h2.style.font="normal bold 20px sans-serif";
@@ -117,10 +117,11 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_close.png";
 	    	imagen.className="tituloAbierto";
-	    },200,elementoAccion);
+	    },100,elementoAccion);
     }     
     else{
-    	setTimeout("cerrarAcordeon('"+idElementoAnimar+"',5)",1); 
+    	//setTimeout("cerrarAcordeon('"+id+"',10)",001); 
+    	setTimeout("cerrarAcordeon('"+idElementoAnimar+"',10)",001); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
 	    	h2.style.font="normal normal 20px sans-serif";
@@ -128,7 +129,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_open.png";
 	    	imagen.className="";
-    	},200,elementoAccion);
+    	},100,elementoAccion);
     }
         
 }

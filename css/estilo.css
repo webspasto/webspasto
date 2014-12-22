@@ -412,47 +412,51 @@ div#divredes{
 .acordeon div::-webkit-scrollbar-button:start{
    background: url('../img/scroll_top.png') no-repeat;
    background-size: 9px 6px;
-   background-position-y: 50%;
+   background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:end{
    background: url('../img/scroll_bottom.png') no-repeat;
    background-size: 9px 6px;
-   background-position-y: 50%;
+   background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:horizontal:start{
    background: url('../img/scroll_left.png') no-repeat;
    background-size: 6px 9px;
-   background-position-x: 50%;
+   background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:horizontal:end{
    background: url('../img/scroll_right.png') no-repeat;
    background-size: 6px 9px;
-   background-position-x: 50%;
+   background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar {
-   width: 15px;
+   width: 12px;
    height: 6px;
 }
 
 .acordeon div::-webkit-scrollbar:horizontal {
    width: 6px;
-   height: 9px;
+   height: 12px;
 }
 
 .acordeon div::-webkit-scrollbar-track {
-   border-radius: 5px;
+   border-radius: 4px;
    border: 1px solid #D1D1D1;
 }
 
 .acordeon div::-webkit-scrollbar-track-piece {
+   border-radius: 4px;
    background-color: #EEEEEE;
 }
 
 .acordeon div::-webkit-scrollbar-thumb {
    border-radius: 4px;
    background-color: #cccccc;
+}
+.acordeon div{
+    scroll
 }
