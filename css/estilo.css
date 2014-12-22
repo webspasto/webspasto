@@ -331,7 +331,7 @@ div#divredes{
      height:100%;
      text-align:center;
      z-index: 1000;
-          opacity: none;
+     opacity: none;
 }
 
 #overlay div {
@@ -363,31 +363,76 @@ div#divredes{
     text-align: right;
     margin-bottom: -20px;
 }
-.acordeon{
-    
+
+.acordeon{    
     /*width: 100%;*/
 }
 
 .acordeon>a>div{
+    padding-left: 15px;
     width: 0px;
     height: 0px;
-    overflow: auto;
+    overflow: scroll;
 }
 .acordeon>a{
     width: 800px;
     height: auto;
-    background: gray;
+}
+.acordeon>a:hover{
+    cursor: pointer;
 }
 
-.abrirAcordeon
-{
-    background: skyblue;
-    margin: 5px;
-    border: 1px solid gray;
-    padding: 10px;
+.abrirAcordeon{
+    //padding-left: 15px;
 }
-.cerrarAcordeon
-{
-    border: 0;
-    padding: 0px;
+.cerrarAcordeon{
+    //padding-left: 15px;
+}
+
+.acordeon div::-webkit-scrollbar-button:start{
+    background: url('../img/scroll_top.png') no-repeat;
+    background-size: 9px 6px;
+    background-position-y: 50%;
+}
+
+.acordeon div::-webkit-scrollbar-button:end{
+    background: url('../img/scroll_bottom.png') no-repeat;
+    background-size: 9px 6px;
+    background-position-y: 50%;
+}
+
+.acordeon div::-webkit-scrollbar-button:horizontal:start{
+    background: url('../img/scroll_left.png') no-repeat;
+    background-size: 6px 9px;
+    background-position-x: 50%;
+}
+
+.acordeon div::-webkit-scrollbar-button:horizontal:end{
+    background: url('../img/scroll_right.png') no-repeat;
+    background-size: 6px 9px;
+    background-position-x: 50%;
+}
+
+.acordeon div::-webkit-scrollbar {
+    width: 9px;
+    height: 6px;
+}
+
+.acordeon div::-webkit-scrollbar:horizontal {
+    width: 6px;
+    height: 9px;
+}
+
+.acordeon div::-webkit-scrollbar-track {
+    border-radius: 2px;
+    border: 1px solid #D1D1D1;
+}
+
+.acordeon div::-webkit-scrollbar-track-piece {
+    background-color: #EEEEEE;
+}
+
+.acordeon div::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #cccccc;
 }
