@@ -69,7 +69,7 @@
             }
             imgs=document.getElementsByClassName('qq11');
             for	(i = 0; i < imgs.length; i++) {
-                imgs[i].src="img/question_open.png";
+                imgs[i].src="img/quiestion_close.png";
             }
             lbls=document.getElementsByTagName('label');
             for	(i = 0; i < lbls.length; i++) {
@@ -82,44 +82,134 @@
             var im = document.getElementById(img);
             var ra = document.getElementById(rta);
             if (ra.style.visibility == "visible"){
+                //e[0].style.visibility = "visible";
                 bn.textContent="Show";
                 bn.style.font="normal normal 15px arial,serif";
                 ra.style.visibility = "hidden";
                 ra.transition="all 2s";
-                ra.style.height="0";
-                im.src="img/question_open.png";
+                ra.style.height="0px";
+                im.src="img/quiestion_close.png";
             }
             else{
-                //iniciar();
+                //e[0].style.visibility = "hidden";
                 bn.textContent="Hide";
                 bn.style.font="normal bold 15px arial,serif";
                 ra.style.visibility = "visible";
                 ra.transition="all 2s";
-                ra.style.height="auto";
-                im.src="img/question_close.png";
+                ra.style.height="100px";
+                im.src="img/quiestion_open.png";
             }
         }
     </script>
     <style>
+        .qqq::-webkit-scrollbar-button:start{
+            background: url('img/scroll_top.png') no-repeat;
+            background-size: 9px 6px;
+            background-position: 50%;
+        }
+
+        .qqq::-webkit-scrollbar-button:end{
+            background: url('img/scroll_bottom.png') no-repeat;
+            background-size: 9px 6px;
+            background-position: 50%;
+        }
+
+        .qqq::-webkit-scrollbar-button:horizontal:start{
+            background: url('img/scroll_left.png') no-repeat;
+            background-size: 6px 9px;
+            background-position: 50%;
+        }
+
+        .qqq::-webkit-scrollbar-button:horizontal:end{
+            background: url('img/scroll_right.png') no-repeat;
+            background-size: 6px 9px;
+            background-position: 50%;
+        }
+
+        .qqq::-webkit-scrollbar {
+            width: 12px;
+            height: 6px;
+        }
+
+        .qqq::-webkit-scrollbar:horizontal {
+            width: 6px;
+            height: 12px;
+        }
+
+        .qqq::-webkit-scrollbar-track {
+            border-radius: 4px;
+            border: 1px solid #D1D1D1;
+        }
+
+        .qqq::-webkit-scrollbar-track-piece {
+            border-radius: 4px;
+            background-color: #EEEEEE;
+        }
+
+        .qqq::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: #cccccc;
+        }
+
         .qqq{
             font-weight: normal;
-            width: 150px;
+            width: 400px;
+            height: 100px;
             text-align: justify;
+            overflow: scroll;
+            
         }
         .qq11{
-            width: 11px;
-            height: 11px;
-            background-position: 50%;
+            width: 10px;
+            height: 10px;
+        }
+        #contenedor{
+            font-weight: normal;
+            width: 400px;
+            height: 100px;
+            text-align: justify;
+            overflow: scroll;
+            
+        }
+        #texto{
+            width: 500px;
+            height: 150px;
+        }
+        a:hover, label:hover{
+            cursor: pointer;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <img class="qq11" id="img1"><label id="lbl1" onclick="rta('lbl1','p1','img1');"></label>
-    <div id="p1" class="qqq">This is a paragraph with little content.<hr></div>
-    <img class="qq11" id="img2"><label id="lbl2" onclick="rta('lbl2','p2','img2');"></label>
-    <div id="p2" class="qqq">This is another small.<hr></div>
-    <img class="qq11" id="img3"><label id="lbl3" onclick="rta('lbl3','p3','img3');"></label>
-    <div id="p3" class="qqq">This is another small.<hr></div>
+    <a onclick="rta('hide','p1','img1');"><img class="qq11" id="img1"><label id="hide"></label></a>
+    <div id="p1" class="qqq">
+        <div id="texto">
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            <hr>
+        </div>
+    </div>
+    <a onclick="rta('show','p2','img2');"><img class="qq11" id="img2"><label id="show"></label></a>
+    <div id="p2" class="qqq">
+        <div id="texto">
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            <hr>
+        </div>
+    </div>
+<!--    <div id="contenedor">
+        <div id="texto">
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+        </div>
+    </div>-->
 </body>
 <script>
     iniciar();
