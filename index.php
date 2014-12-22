@@ -61,25 +61,26 @@
         <?php include 'header.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
-                <div id="divPadre"class="acordeon" >
-                    <a onclick="acordeon('div1','divPadre');">¿Quienes somos?
-                        <div id="div1"><p>
+                <div id="divPadre" class="acordeon" >
+                    <a onclick="acordeon(this,'div1','divPadre');"><h2><img id="img1" src="img/quiestion_open.png">¿Quienes somos?</h2> 
+                    </a>
+                    <div id="div1"><p>
                             <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
                                 el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
                         </p>
                         <hr></div>
-                    </a><br>
-                    <a onclick="acordeon('div2','divPadre');">Nuestros servicios
-                        <div id="div2">
+                    <a onclick="acordeon(this,'div2','divPadre');"><h2><img id="img2" src="img/quiestion_open.png">Nuestros servicios</h2>
+                    </a>
+                    <div id="div2">
                             <p>
                                 Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
                                 al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
                             </p>
                             <hr>
                         </div>
-                    </a><br>
-                    <a onclick="acordeon('div3','divPadre');">¿Por que ?
-                        <div id="div3">
+                    <a onclick="acordeon(this,'div3','divPadre');"><h2><img id="img3" src="img/quiestion_open.png">¿Por que ?</h2>
+                    </a>
+                    <div id="div3">
                             <p>
                                 Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
                                 Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
@@ -93,13 +94,32 @@
                             </ul>
                             <hr>
                         </div>
-                    </a><br>
-                    <a onclick="acordeon('div4','divPadre');">Enlace 4
-                        <div id="div4">Este es el div numero4</div>
-                    </a><br>
-                    <a onclick="acordeon('div5','divPadre');">Enlace 5
-                        <div id="div5">Este es el div numero5</div>
+                    <a onclick="acordeon(this,'div4','divPadre');"><h2><img id="img4" src="img/quiestion_open.png">Enlace 4</h2>
                     </a>
+                    <div id="div4">Este es el div numero4</div>
+                    <a onclick="acordeon(this,'div5','divPadre');"><h2><img id="img5" src="img/quiestion_open.png">Enlace 5</h2>   
+                    </a>
+                     <div id="div5">Este es el div numero5
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                        <p>qqqqqqq</p>
+                     </div>
                 </div>
             </div>
         </section>
