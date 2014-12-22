@@ -12,8 +12,6 @@ function validar(){
     var emailmsg=document.getElementById('emailmsg');
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (nombre == null || nombre.value == ("") || nombre.value == ('')){
-        //nombre.style.background="#f60";
-        //nombretxt.style.border="1";
         nombre.focus();
         nombremsg.textContent="Este campo es obligatorio";
         return false;
@@ -71,7 +69,7 @@ function validar(){
             spinnerimg.src="img/vacio.png";
             enlace.setAttribute("onclick","validar();");
             enlace.className = "";
-            setTimeout("ocultar('lblmsg')",3000);
+            setTimeout("ocultar('lblmsg',0.3)",3000);
         }           
     }
 

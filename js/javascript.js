@@ -13,8 +13,27 @@ function inciarValoresMostrar(cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocid
 	velocidad = velocidadIN;
 	prorrata  = anchura/altura;	
 }
-
+/*para el formulario*/
 function mostrar(idElemento,cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidadIN){
+	if(cantidadIN == 0 && alturaIN==0 && anchuraIN == 0 && velocidadIN==0 && esperaIN == 0 ){
+		return false;
+	}
+	else{
+		inciarValoresMostrar(cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidadIN);
+		document.getElementById(idElemento).style.overflow="hidden";		
+		animar(idElemento);
+	}
+}
+function ocultar(idElemento,velocidadIN){
+	elemento = document.getElementById(idElemento);
+	elemento.style.overflow="hidden";
+	alturaIN = elemento.style.pixelHeig;
+    alturaIN = elemento.offsetHeight;
+	inciarValoresMostrar(alturaIN ,alturaIN ,elemento.offsetWidth ,1 ,velocidadIN);
+	animar(idElemento);
+}
+/*para las preguntas*/
+function abrirAcordeon(idElemento,cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidadIN){
 	if(cantidadIN == 0 && alturaIN==0 && anchuraIN == 0 && velocidadIN==0 && esperaIN == 0 ){
 		return false;
 	}
@@ -26,7 +45,7 @@ function mostrar(idElemento,cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidad
 	}
 }
 
-function ocultar(idElemento,velocidadIN){
+function cerrarAcordeon(idElemento,velocidadIN){
 	elemento = document.getElementById(idElemento);
 	elemento.className="cerrarAcordeon";
 	elemento.style.overflow="auto";
@@ -73,7 +92,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
             div = array[i];
             id=div.getAttribute('id')
             if(estaAbierto(id) && id !=idElementoAnimar){
-            	setTimeout("ocultar('"+id+"',5)",1); 
+            	setTimeout("cerrarAcordeon('"+id+"',5)",1); 
             	setTimeout(function() {
             		h2 = padre.getElementsByClassName('tituloAbierto')[0];
 			        h2.style.font="normal normal 20px sans-serif";	
@@ -90,7 +109,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
     if(!otroAbierto){ w=0;}
 
     if(abrir){
-    	setTimeout("mostrar('"+idElementoAnimar+"',1,200,800,1,3)",w); 
+    	setTimeout("abrirAcordeon('"+idElementoAnimar+"',1,200,800,1,3)",w); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
 	    	h2.style.font="normal bold 20px sans-serif";
@@ -101,7 +120,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 	    },200,elementoAccion);
     }     
     else{
-    	setTimeout("ocultar('"+idElementoAnimar+"',5)",1); 
+    	setTimeout("cerrarAcordeon('"+idElementoAnimar+"',5)",1); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
 	    	h2.style.font="normal normal 20px sans-serif";
