@@ -11,7 +11,7 @@ function inciarValoresMostrar(cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocid
 	anchura   = anchuraIN;
 	espera    = esperaIN;
 	velocidad = velocidadIN;
-	prorrata  = anchura/altura;
+	prorrata  = anchura/altura;	
 }
 
 function mostrar(idElemento,cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidadIN){
@@ -20,14 +20,16 @@ function mostrar(idElemento,cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidad
 	}
 	else{
 		inciarValoresMostrar(cantidadIN ,alturaIN ,anchuraIN ,esperaIN ,velocidadIN);
-		document.getElementById(idElemento).style.overflow="scroll";
+		document.getElementById(idElemento).style.overflow="auto";
+		document.getElementById(idElemento).className="abrirAcordeon";
 		animar(idElemento);
 	}
 }
 
 function ocultar(idElemento,velocidadIN){
 	elemento = document.getElementById(idElemento);
-	elemento.style.overflow="scroll";
+	elemento.className="cerrarAcordeon";
+	elemento.style.overflow="auto";
 	alturaIN = elemento.style.pixelHeig;
     alturaIN = elemento.offsetHeight;
 	inciarValoresMostrar(alturaIN ,alturaIN ,elemento.offsetWidth ,1 ,velocidadIN);
@@ -48,6 +50,9 @@ function animar(idElemento){
 		elemento.style.height=0+"px";
 		elemento.style.width=0+"px";
 	}
+	if((cantidad>=tope-incremento && cantidad<=tope+incremento) || cantidad==tope){
+		cantidad=tope;
+	}
 	if(cantidad!=tope){
 		setTimeout("animar('"+idElemento+"')",espera);
 	}
@@ -56,6 +61,7 @@ function animar(idElemento){
 function acordeon(idElementoAnimar,idDivPadre)
 {
     abrir = false;
+    otroAbierto = false;
     if(!estaAbierto(idElementoAnimar))
         abrir=true;
     padre = document.getElementById(idDivPadre);  
@@ -63,14 +69,19 @@ function acordeon(idElementoAnimar,idDivPadre)
         for(i = 0; i<array.length ;i++){
             div = array[i];
             id=div.getAttribute('id')
-            if(estaAbierto(id) && id !=idElementoAnimar)
-                setTimeout("ocultar('"+id+"',1)",1); 
+            if(estaAbierto(id) && id !=idElementoAnimar){
+            	setTimeout("ocultar('"+id+"',5)",1); 
+            	otroAbierto=true;
+            }
+                
     }
+    w = 500;
+    if(!otroAbierto){ w=0;}
 
     if(abrir)
-        setTimeout("mostrar('"+idElementoAnimar+"',1,100,320,1,3)",500); 
+        setTimeout("mostrar('"+idElementoAnimar+"',1,200,800,1,3)",w); 
     else
-        setTimeout("ocultar('"+idElementoAnimar+"',1)",1); 
+        setTimeout("ocultar('"+idElementoAnimar+"',5)",1); 
 }
 function estaAbierto(idElemento){
     elemento = document.getElementById(idElemento);  

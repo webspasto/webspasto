@@ -61,16 +61,16 @@
         <?php include 'header.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
-                <div id="divPadre"class="ocultarDiv">
+                <div id="divPadre"class="acordeon" >
                     <a onclick="acordeon('div1','divPadre');">¿Quienes somos?
-                    </a><br>
-                    <div style="background:blue;" id="div1"><p>
+                        <div id="div1"><p>
                             <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
                                 el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
                         </p>
                         <hr></div>
+                    </a><br>
                     <a onclick="acordeon('div2','divPadre');">Nuestros servicios
-                        <div style="background:blue;" id="div2">
+                        <div id="div2">
                             <p>
                                 Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
                                 al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
@@ -79,7 +79,7 @@
                         </div>
                     </a><br>
                     <a onclick="acordeon('div3','divPadre');">¿Por que ?
-                        <div style="background:blue;" id="div3">
+                        <div id="div3">
                             <p>
                                 Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
                                 Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
@@ -95,10 +95,10 @@
                         </div>
                     </a><br>
                     <a onclick="acordeon('div4','divPadre');">Enlace 4
-                        <div style="background:blue;" id="div4">Este es el div numero4</div>
+                        <div id="div4">Este es el div numero4</div>
                     </a><br>
                     <a onclick="acordeon('div5','divPadre');">Enlace 5
-                        <div style="background:blue;" id="div5">Este es el div numero5</div>
+                        <div id="div5">Este es el div numero5</div>
                     </a>
                 </div>
             </div>
