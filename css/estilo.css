@@ -363,3 +363,9 @@ div#divredes{
     text-align: right;
     margin-bottom: -20px;
 }
+
+.ocultarDiv div{
+    width: 0px;
+    height: 0px;
+    overflow: scroll;
+}
