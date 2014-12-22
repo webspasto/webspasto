@@ -8,11 +8,13 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/icon.ico" type="image/png">
 
-        <link rel="stylesheet" href="css/jquery-ui.css">
+        <!--<link rel="stylesheet" href="css/jquery-ui.css">
         <script src="js/jquery-1.10.2.js"></script>
-        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery-ui.js"></script>-->
+
+        <script src="js/javascript.js" type="text/javascript"></script>
         <script>
-          $(function() {
+          /*$(function() {
             var icons = {
               header: "ui-icon-circle-arrow-e",
               activeHeader: "ui-icon-circle-arrow-s"
@@ -27,7 +29,7 @@
                 $( "#accordion" ).accordion( "option", "icons", icons );
               }
             });
-          });
+          });*/
         </script>
 
         <script type="text/javascript">
@@ -56,30 +58,28 @@
         </style>
     </head>
     <body>
-        <div id="idioma"><a href="home.php" ><img title="Inglés" src="img/eng.png"></a></div>
         <?php include 'header.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
-                <div class="sections">
-                    <div id="accordion">
-                        <h3 class="itemAcordion">¿Quienes somos?</h3>
-                        <div>
-                            <p>
-                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
+                <div id="divPadre"class="ocultarDiv">
+                    <a onclick="acordeon('div1','divPadre');">¿Quienes somos?
+                    </a><br>
+                    <div style="background:blue;" id="div1"><p>
+                            <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
                                 el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
-                            </p>
-                            <hr>
-                        </div>
-                        <h3 class="itemAcordion">Nuestros servicios</h3>
-                        <div>
+                        </p>
+                        <hr></div>
+                    <a onclick="acordeon('div2','divPadre');">Nuestros servicios
+                        <div style="background:blue;" id="div2">
                             <p>
                                 Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
                                 al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
                             </p>
                             <hr>
                         </div>
-                        <h3 class="itemAcordion">¿Por que ?</h3>
-                        <div>
+                    </a><br>
+                    <a onclick="acordeon('div3','divPadre');">¿Por que ?
+                        <div style="background:blue;" id="div3">
                             <p>
                                 Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
                                 Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
@@ -93,22 +93,13 @@
                             </ul>
                             <hr>
                         </div>
-                        <h3 class="itemAcordion">Section 4</h3>
-                        <div >
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                            <p>
-                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
+                    </a><br>
+                    <a onclick="acordeon('div4','divPadre');">Enlace 4
+                        <div style="background:blue;" id="div4">Este es el div numero4</div>
+                    </a><br>
+                    <a onclick="acordeon('div5','divPadre');">Enlace 5
+                        <div style="background:blue;" id="div5">Este es el div numero5</div>
+                    </a>
                 </div>
             </div>
         </section>
