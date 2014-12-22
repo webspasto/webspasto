@@ -69,7 +69,7 @@
             }
             imgs=document.getElementsByClassName('qq11');
             for	(i = 0; i < imgs.length; i++) {
-                imgs[i].src="img/img_exito.png";
+                imgs[i].src="img/question_open.png";
             }
             lbls=document.getElementsByTagName('label');
             for	(i = 0; i < lbls.length; i++) {
@@ -82,23 +82,21 @@
             var im = document.getElementById(img);
             var ra = document.getElementById(rta);
             if (ra.style.visibility == "visible"){
-                //e[0].style.visibility = "visible";
                 bn.textContent="Show";
                 bn.style.font="normal normal 15px arial,serif";
                 ra.style.visibility = "hidden";
                 ra.transition="all 2s";
                 ra.style.height="0";
-                im.src="img/img_exito.png";
+                im.src="img/question_open.png";
             }
             else{
-                iniciar();
-                //e[0].style.visibility = "hidden";
+                //iniciar();
                 bn.textContent="Hide";
                 bn.style.font="normal bold 15px arial,serif";
                 ra.style.visibility = "visible";
                 ra.transition="all 2s";
                 ra.style.height="auto";
-                im.src="img/img_error.png";
+                im.src="img/question_close.png";
             }
         }
     </script>
@@ -109,16 +107,19 @@
             text-align: justify;
         }
         .qq11{
-            width: 20px;
-            height: 20px;
+            width: 11px;
+            height: 11px;
+            background-position: 50%;
         }
     </style>
 </head>
 <body>
-    <img class="qq11" id="img1"><label id="hide" onclick="rta('hide','p1','img1');"></label>
+    <img class="qq11" id="img1"><label id="lbl1" onclick="rta('lbl1','p1','img1');"></label>
     <div id="p1" class="qqq">This is a paragraph with little content.<hr></div>
-    <img class="qq11" id="img2"><label id="show" onclick="rta('show','p2','img2');"></label>
+    <img class="qq11" id="img2"><label id="lbl2" onclick="rta('lbl2','p2','img2');"></label>
     <div id="p2" class="qqq">This is another small.<hr></div>
+    <img class="qq11" id="img3"><label id="lbl3" onclick="rta('lbl3','p3','img3');"></label>
+    <div id="p3" class="qqq">This is another small.<hr></div>
 </body>
 <script>
     iniciar();
