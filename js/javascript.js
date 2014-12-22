@@ -62,26 +62,25 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 {
     abrir = false;
     otroAbierto = false;
-    //titulo =document.getElementById(idTituloImg);  
 
     if(!estaAbierto(idElementoAnimar))
         abrir=true;
 
-    
-
     padre = document.getElementById(idDivPadre);  
-        array = padre.getElementsByTagName('div');
-        
+    array = padre.getElementsByTagName('div');
+
         for(i = 0; i<array.length ;i++){
             div = array[i];
             id=div.getAttribute('id')
             if(estaAbierto(id) && id !=idElementoAnimar){
             	setTimeout("ocultar('"+id+"',5)",1); 
             	setTimeout(function() {
-            		imagen = padre.getElementsByClassName('tituloAbierto')[0];
-			        imagen.className="";
+            		h2 = padre.getElementsByClassName('tituloAbierto')[0];
+			        h2.style.font="normal normal 20px sans-serif";	
+			        h2.className="";
+            		imagen = h2.getElementsByTagName('img')[0];
+			        imagen.className="";			   
 	            	imagen.src="img/quiestion_open.png";
-	            	
             	},200,padre);
             	otroAbierto=true;
             }
@@ -94,6 +93,8 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
     	setTimeout("mostrar('"+idElementoAnimar+"',1,200,800,1,3)",w); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
+	    	h2.style.font="normal bold 20px sans-serif";
+	    	h2.className="tituloAbierto";
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_close.png";
 	    	imagen.className="tituloAbierto";
@@ -103,6 +104,8 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
     	setTimeout("ocultar('"+idElementoAnimar+"',5)",1); 
     	setTimeout(function() {
 	    	h2=elementoAccion.getElementsByTagName('h2')[0];
+	    	h2.style.font="normal normal 20px sans-serif";
+	    	h2.className="";
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_open.png";
 	    	imagen.className="";
