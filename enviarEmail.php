@@ -10,7 +10,7 @@
     $asunto = $_GET['asunto'];
     $consulta = $_GET['mensaje'];
 
-    $mensaje = "<div style='padding:5px; background:#EEE; border:0px solid black; text-align:justify;'>"
+    $mensaje = "<div style='padding:5px; background:#F1F1F1; border:0px solid black; border-radius: 2px; text-align:justify;'>"
             . "<div><p><strong>Nombre:</strong> " . $nombre . "</p></div>"
             . "<div><p><strong>Email: </strong>" . $email . "</p></div>"
             . "<div><p><strong>Mensaje: </strong>" . $consulta . "</p></div>"
