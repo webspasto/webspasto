@@ -53,6 +53,7 @@
         </style>
     </head>
     <body>
+        <div id="idioma"><a href="home.php" ><img title="Inglés" src="img/eng.png"></a></div>
         <?php include 'header.php'; ?>
         <section id="contenedor">
             <div class="divsolo">
