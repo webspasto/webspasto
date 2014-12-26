@@ -61,42 +61,43 @@
                         <a onclick="acordeonSimple(this, 'divPadre2');">
                             <h2><img src="img/question_open.png">¿Quienes somos?</h2> 
                         </a>
-                        <div><p>
-                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
-                                el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
-                            </p>
-                            <hr></div>
+                        <div>
+                            <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
+                            el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
+                            <!--<hr>-->
+                        </div>
                         <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Nuestros servicios</h2>
                         </a>
                         <div>
-                            <p>
-                                Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
-                                al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
-                            </p>
-                            <hr>
+                            Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
+                            al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
+                            <!--<hr>-->
                         </div>
                         <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">¿Por que ?</h2>
                         </a>
                         <div>
-                            <p>
-                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                            </p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
                             <ul>
                                 <li>List item one</li>
                                 <li>List item two</li>
                                 <li>List item three</li>
                             </ul>
-                            <hr>
+                            Fin div 3
+                            <!--<hr>-->
                         </div>
                         <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Enlace 4</h2>
                         </a>
-                        <div>Este es el div numero4</div>
+                        <div>
+                            Este es el div numero4
+                            <!--<hr>-->
+                        </div>
                         <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Enlace 5</h2>   
                         </a>
-                        <div>Este es el div numero5
+                        <div>
+                            Este es el div numero5
                             <p>qqqqqqq</p>
                             <p>qqqqqqq</p>
                             <p>qqqqqqq</p>
@@ -116,6 +117,8 @@
                             <p>qqqqqqq</p>
                             <p>qqqqqqq</p>
                             <p>qqqqqqq</p>
+                            Fin div5
+                            <!--<hr>-->
                         </div>
                     </div>
                 </div>

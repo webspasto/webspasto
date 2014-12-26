@@ -372,42 +372,52 @@ div#divredes{
     height: 0px;
     overflow: auto;
 }
-.acordeon>a:hover{
+.acordeon>a:hover, .acordeon>a>h2:hover{
     cursor: pointer;
+    opacity: 0.8;
 }
 .acordeon>a>h2{
-    background: #E9E4E4;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: gray;
-    font-size: 20px;
+    //background: #E9E4E4;
+    //border-radius: 5px;
+    //border: 1px solid black;
+    width: 100%;
+    color: black;
+    font-size: 19px;
     font-weight: normal;
     height: auto;
     margin: 0;
-    margin-bottom: 3px;
-    padding: 3px;
-    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
 }
-.acordeon>a>h2>img{
-    margin:0px 10px 0px 0px;
-     margin:0px 10px;
+.acordeon>a>h2>img {
+    margin:0px 10px;
 }
 
-.abrirAcordeon
-{
+.abrirAcordeon {
     margin: 5px;
     border: 1px solid gray;
     border-top: 0px;
     padding: 10px; 
 }
-.cerrarAcordeon
-{
+.cerrarAcordeon {
     /*border: 0;
     padding: 0px;*/
 }
 
-
-
+#divPadre2>div{
+   margin: 0px;
+   margin-left: 5%;
+   margin-bottom: 1%;
+   padding: 0px;
+   padding-bottom: 1%;
+   border-bottom: 1px solid gray;
+   //border-top: 0px;
+   height: auto;
+   max-height: 150px;
+   width: 90%;
+   display: none;
+   text-align: justify;
+}
 
 .acordeon div::-webkit-scrollbar-button:start{
    background: url('../img/scroll_top.png') no-repeat;
@@ -456,14 +466,4 @@ div#divredes{
 .acordeon div::-webkit-scrollbar-thumb {
    border-radius: 4px;
    background-color: #cccccc;
-}
-
-#divPadre2>div{
-   margin: 5px;
-   border: 1px solid gray;
-   border-top: 0px;
-   padding: 10px; 
-   height: 100px;
-   width: 90%;
-   display: none;
 }

@@ -210,7 +210,7 @@ function acordeonSimple(elementoAnimar, idDivPadre) {
     padre = document.getElementById(idDivPadre);
     arrayH2 = padre.querySelectorAll('a h2:first-child');
     for (i = 0; i < arrayH2.length; i++)
-        arrayH2[i].style.font = "normal normal 20px sans-serif";
+        arrayH2[i].style.font = "normal normal 19px sans-serif";
     divAnimar = elementoAnimar.nextElementSibling;
     if (divAnimar.style.display == 'inherit') {
         divAnimar.style.display = 'none';
@@ -225,7 +225,7 @@ function acordeonSimple(elementoAnimar, idDivPadre) {
             }
         }
         divAnimar.style.display = 'inherit';
-        elementoAnimar.getElementsByTagName('h2')[0].style.font = "normal bold 20px sans-serif";
+        elementoAnimar.getElementsByTagName('h2')[0].style.font = "normal bold 19px sans-serif";
         elementoAnimar.getElementsByTagName('h2')[0].getElementsByTagName('img')[0].src = 'img/question_close.png';
     }
 }
