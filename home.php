@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,28 +6,7 @@
         <title>WebsPasto - Aplicaciones Web y Escritorio</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/icon.ico" type="image/png">
-
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <script src="js/jquery-1.10.2.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script>
-          $(function() {
-            var icons = {
-              header: "ui-icon-circle-arrow-e",
-              activeHeader: "ui-icon-circle-arrow-s"
-            };
-            $( "#accordion" ).accordion({
-              icons: icons
-            });
-            $( "#toggle" ).button().click(function() {
-              if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-                $( "#accordion" ).accordion( "option", "icons", null );
-              } else {
-                $( "#accordion" ).accordion( "option", "icons", icons );
-              }
-            });
-          });
-        </script>
+        <script src="js/operations.js" type="text/javascript"></script>
 
         <script type="text/javascript">
             function cambiarPantalla(str) {
@@ -46,14 +24,6 @@
                 conexion.send();
             }
         </script>
-        <style>
-            .itemAcordion
-            {
-                background: transparent;
-                border: 0;
-                margin-bottom: 10px;
-            }
-        </style>
     </head>
     <body>
         <div id="idioma"><a href="index.php" ><img title="Español" src="img/esp.png"></a></div>
@@ -61,52 +31,68 @@
         <section id="contenedor">
             <div class="divsolo">
                 <div class="sections">
-                    <div id="accordion">
-                        <h3 class="itemAcordion">¿Quienes somos?</h3>
+                    <div id="divPadre2" class="acordeon">
+                        <a onclick="acordeonSimple(this, 'divPadre2');">
+                            <h2><img src="img/question_open.png">¿Quienes somos?</h2> 
+                        </a>
                         <div>
-                            <p>
-                                <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
-                                el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
-                            </p>
-                            <hr>
+                            <strong>Webspasto - Desarrollo de aplicaciones Web y Escrotorio</strong> es una empresa que, aplicando
+                            el modelo TSP, se dedicada a la elaboración de herramientas o productos software para pequeñas o medianas empresas.
+                            <!--<hr>-->
                         </div>
-                        <h3 class="itemAcordion">Nuestros servicios</h3>
+                        <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Nuestros servicios</h2>
+                        </a>
                         <div>
-                            <p>
-                                Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
-                                al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
-                            </p>
-                            <hr>
+                            Ofrecemos soluciones informaticas a la medida, brindando una herramienta que permite
+                            al cliente tener un completo manejo y una completa administración de las actividades de su empresa.
+                            <!--<hr>-->
                         </div>
-                        <h3 class="itemAcordion">¿Por que ?</h3>
+                        <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">¿Por que ?</h2>
+                        </a>
                         <div>
-                            <p>
-                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                            </p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
                             <ul>
                                 <li>List item one</li>
                                 <li>List item two</li>
                                 <li>List item three</li>
                             </ul>
-                            <hr>
+                            Fin div 3
+                            <!--<hr>-->
                         </div>
-                        <h3 class="itemAcordion">Section 4</h3>
-                        <div >
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                            <p>
-                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos.
-                            </p>
-                            <hr>
+                        <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Enlace 4</h2>
+                        </a>
+                        <div>
+                            Este es el div numero4
+                            <!--<hr>-->
+                        </div>
+                        <a onclick="acordeonSimple(this, 'divPadre2');"><h2><img src="img/question_open.png">Enlace 5</h2>   
+                        </a>
+                        <div>
+                            Este es el div numero5
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            <p>qqqqqqq</p>
+                            Fin div5
+                            <!--<hr>-->
                         </div>
                     </div>
                 </div>

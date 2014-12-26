@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,9 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="shortcun icon" href="img/icon.ico" type="image/png">
         <script src="js/operations.js" type="text/javascript"></script>
-        <script>
-        </script>
-
+        
         <script type="text/javascript">
             function cambiarPantalla(str) {
                 var conexion;
@@ -27,30 +24,6 @@
                 conexion.send();
             }
         </script>
-        <style>
-            .itemAcordion{
-                background: transparent;
-                border: 0;
-                margin-bottom: 10px;
-            }
-            .pregunta{
-                text-align: left;
-                width: 100px;
-            }
-            .rtapreg{
-                font-weight: normal;
-                width: auto;
-                text-align: justify;
-                margin-left: 15px;
-            }
-            .imgpreg{
-                background-position: 50%;
-            }
-            .pregunta a:hover, .lblpreg:hover{
-                opacity: 0.8;
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body>
         <div id="idioma"><a href="home.php" ><img title="Inglés" src="img/eng.png"></a></div>
@@ -127,7 +100,4 @@
         </section>
         <?php include 'footer.html'; ?>
     </body>
-    <script>
-        //iniciar();
-    </script>
 </html>
