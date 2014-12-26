@@ -100,7 +100,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
             		imagen = h2.getElementsByTagName('img')[0];
 			        imagen.className="";			   
 	            	imagen.src="img/quiestion_open.png";
-            	},100,padre);
+            	},5,padre);
             	otroAbierto=true;
             }
                 
@@ -117,7 +117,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_close.png";
 	    	imagen.className="tituloAbierto";
-	    },100,elementoAccion);
+	    },5,elementoAccion);
     }     
     else{
     	//setTimeout("cerrarAcordeon('"+id+"',10)",001); 
@@ -129,7 +129,7 @@ function acordeon(elementoAccion,idElementoAnimar,idDivPadre)
 	        imagen=h2.getElementsByTagName('img')[0];
 	    	imagen.src="img/quiestion_open.png";
 	    	imagen.className="";
-    	},100,elementoAccion);
+    	},5,elementoAccion);
     }
         
 }
