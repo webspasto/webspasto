@@ -62,12 +62,12 @@
 <head>
     <script>
         function iniciar(){
-            rtas=document.getElementsByClassName('qqq');
+            rtas=document.getElementsByClassName('pregunta');
             for	(i = 0; i < rtas.length; i++) {
                 rtas[i].style.visibility = "hidden";
                 rtas[i].style.height="0";
             }
-            imgs=document.getElementsByClassName('qq11');
+            imgs=document.getElementsByClassName('imgpreg');
             for	(i = 0; i < imgs.length; i++) {
                 imgs[i].src="img/quiestion_close.png";
             }
@@ -102,56 +102,56 @@
         }
     </script>
     <style>
-        .qqq::-webkit-scrollbar-button:start{
+        .pregunta::-webkit-scrollbar-button:start{
             background: url('img/scroll_top.png') no-repeat;
             background-size: 9px 6px;
             background-position: 50%;
         }
 
-        .qqq::-webkit-scrollbar-button:end{
+        .pregunta::-webkit-scrollbar-button:end{
             background: url('img/scroll_bottom.png') no-repeat;
             background-size: 9px 6px;
             background-position: 50%;
         }
 
-        .qqq::-webkit-scrollbar-button:horizontal:start{
+        .pregunta::-webkit-scrollbar-button:horizontal:start{
             background: url('img/scroll_left.png') no-repeat;
             background-size: 6px 9px;
             background-position: 50%;
         }
 
-        .qqq::-webkit-scrollbar-button:horizontal:end{
+        .pregunta::-webkit-scrollbar-button:horizontal:end{
             background: url('img/scroll_right.png') no-repeat;
             background-size: 6px 9px;
             background-position: 50%;
         }
 
-        .qqq::-webkit-scrollbar {
+        .pregunta::-webkit-scrollbar {
             width: 12px;
             height: 6px;
         }
 
-        .qqq::-webkit-scrollbar:horizontal {
+        .pregunta::-webkit-scrollbar:horizontal {
             width: 6px;
             height: 12px;
         }
 
-        .qqq::-webkit-scrollbar-track {
+        .pregunta::-webkit-scrollbar-track {
             border-radius: 4px;
             border: 1px solid #D1D1D1;
         }
 
-        .qqq::-webkit-scrollbar-track-piece {
+        .pregunta::-webkit-scrollbar-track-piece {
             border-radius: 4px;
             background-color: #EEEEEE;
         }
 
-        .qqq::-webkit-scrollbar-thumb {
+        .pregunta::-webkit-scrollbar-thumb {
             border-radius: 4px;
             background-color: #cccccc;
         }
 
-        .qqq{
+        .pregunta{
             font-weight: normal;
             width: 400px;
             height: 100px;
@@ -159,7 +159,7 @@
             overflow: scroll;
             
         }
-        .qq11{
+        .imgpreg{
             width: 10px;
             height: 10px;
         }
@@ -182,8 +182,8 @@
     </style>
 </head>
 <body>
-    <a onclick="rta('hide','p1','img1');"><img class="qq11" id="img1"><label id="hide"></label></a>
-    <div id="p1" class="qqq">
+    <a onclick="rta('p1','img1');"><img class="imgpreg" id="img1"></a>
+    <div id="p1" class="pregunta">
         <div id="texto">
             Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
             Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
@@ -192,8 +192,8 @@
             <hr>
         </div>
     </div>
-    <a onclick="rta('show','p2','img2');"><img class="qq11" id="img2"><label id="show"></label></a>
-    <div id="p2" class="qqq">
+    <a onclick="rta('p2','img2');"><img class="imgpreg" id="img2"></label></a>
+    <div id="p2" class="pregunta">
         <div id="texto">
             Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
             Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
