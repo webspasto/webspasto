@@ -234,6 +234,7 @@ footer{
     background-position: 35% 35% !important;
 }
 
+
 img#loading{
     width: 15px;
     height: 15px;
@@ -290,6 +291,7 @@ div#divredes{
     width: 40px;
     margin-top: 20px;
     float: right;
+    /*display: inline-block;*/
 }
 
 #social img{
@@ -372,46 +374,52 @@ div#divredes{
     height: 0px;
     overflow: auto;
 }
+
 .acordeon>a:hover, .acordeon>a>h2:hover{
     cursor: pointer;
     opacity: 0.8;
 }
 
 .acordeon>a>h2{
-    width: 100%;
+    background: #E9E4E4;
+    border-radius: 5px;
+    border: 1px solid black;
     color: black;
     font-size: 19px;
     font-weight: normal;
     height: auto;
     margin: 0;
-    margin-bottom: 5px;
-    padding: 5px;
+    margin-bottom: 3px;
+    padding: 3px;
+    width: 100%;
 }
 
-.acordeon>a>h2>img {
+.acordeon>a>h2>img{
     margin:0px 10px;
 }
 
-.abrirAcordeon {
+.abrirAcordeon{
     margin: 5px;
     border: 1px solid gray;
     border-top: 0px;
     padding: 10px; 
 }
-.cerrarAcordeon {
+
+.cerrarAcordeon{
 
 }
 
 #divPadre2>div{
-    margin: 0px;
+    margin: 1%;
     margin-left: 5%;
-    margin-bottom: 1%;
-    padding: 0px;
-    padding-bottom: 1%;
-    border-bottom: 1px solid gray;
+    padding: 2%;
+    padding-top: 1%;
+    border: 1px solid gray;
+    //border-bottom: 1px solid gray;
+    border-top: 0px;
     height: auto;
     max-height: 150px;
-    width: 90%;
+    width: 91.5%;
     display: none;
     text-align: justify;
 }
