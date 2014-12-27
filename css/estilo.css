@@ -353,7 +353,6 @@ div#divredes{
     width: 100%;
     opacity: none;
     z-index: 1001;
-    //position: absolute;
 }
 
 #idioma{
@@ -363,6 +362,10 @@ div#divredes{
     margin-top: 10px;
     text-align: right;
     margin-bottom: -20px;
+}
+
+#idioma>a:hover{
+    opacity: 0.8;
 }
 
 .acordeon{
@@ -474,7 +477,6 @@ div#divredes{
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
-
     header{   
         width :95%;
         height: auto;
