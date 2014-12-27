@@ -111,18 +111,18 @@ footer{
 }
 
 #encabezado {
-    width: auto;
+    width: 940px;
     height: auto;
     margin: 0 auto 0;
     padding-top: 5px;
 }
 
 #logo_cabecera {
-    width: 900px;
+    width: 80%;
     height: 200px;
-    padding-right: 50px;
     background: url('../img/cabecera.png') no-repeat;
-    background-size: 900px 200px;
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
 .msg-error {
@@ -149,7 +149,7 @@ footer{
 }
 
 .sections{
-    width: auto;
+    width: 100%;
     height: auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -185,8 +185,8 @@ footer{
     padding: 5px;
     resize: none;
     width: 80%;
-/*    border: 1px solid #F2E4BD;
-    background: #F8F6E9;*/
+    /*    border: 1px solid #F2E4BD;
+        background: #F8F6E9;*/
     border: 1px solid #E7E5D8;
     background: #FDFDFD;
 }
@@ -234,7 +234,6 @@ footer{
     background-position: 35% 35% !important;
 }
 
-
 img#loading{
     width: 15px;
     height: 15px;
@@ -278,7 +277,7 @@ div#divredes{
     -o-transform: scale(1) rotate(-360deg) ;
     -ms-transform: scale(1) rotate(-360deg) ;
     transform: scale(1) rotate(-360deg);
-    
+
     opacity: 0.5;
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
@@ -309,7 +308,7 @@ div#divredes{
     -o-transform: scale(1) rotate(-360deg) ;
     -ms-transform: scale(1) rotate(-360deg) ;
     transform: scale(1) rotate(-360deg);
-    
+
     opacity: 0.5;
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
@@ -318,33 +317,33 @@ div#divredes{
 }
 
 .centrar{
-   width:100%; 
-   text-align:center;
+    width:100%; 
+    text-align:center;
 }
 
 #overlay {
-     visibility: hidden;
-     position: absolute;
-     left: 0px;
-     top: 0px;
-     width:100%;
-     height:100%;
-     text-align:center;
-     z-index: 1000;
-     opacity: none;
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    z-index: 1000;
+    opacity: none;
 }
 
 #overlay div {
     opacity: 1;
     width:300px;
-     margin-top: 10%;
-     background-color: #fff;
-     padding:15px;
-     text-align:center;     
-     border: 1px solid black;
-     border-radius: 4px;
-     position: absolute;
-     left: 50%;
+    margin-top: 10%;
+    background-color: #fff;
+    padding:15px;
+    text-align:center;     
+    border: 1px solid black;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
 }
 
 #blook{
@@ -363,6 +362,7 @@ div#divredes{
     text-align: right;
     margin-bottom: -20px;
 }
+
 .acordeon{
 
 }
@@ -376,10 +376,8 @@ div#divredes{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .acordeon>a>h2{
-    //background: #E9E4E4;
-    //border-radius: 5px;
-    //border: 1px solid black;
     width: 100%;
     color: black;
     font-size: 19px;
@@ -389,6 +387,7 @@ div#divredes{
     margin-bottom: 5px;
     padding: 5px;
 }
+
 .acordeon>a>h2>img {
     margin:0px 10px;
 }
@@ -400,70 +399,138 @@ div#divredes{
     padding: 10px; 
 }
 .cerrarAcordeon {
-    /*border: 0;
-    padding: 0px;*/
+
 }
 
 #divPadre2>div{
-   margin: 0px;
-   margin-left: 5%;
-   margin-bottom: 1%;
-   padding: 0px;
-   padding-bottom: 1%;
-   border-bottom: 1px solid gray;
-   //border-top: 0px;
-   height: auto;
-   max-height: 150px;
-   width: 90%;
-   display: none;
-   text-align: justify;
+    margin: 0px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    padding: 0px;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+    height: auto;
+    max-height: 150px;
+    width: 90%;
+    display: none;
+    text-align: justify;
 }
 
 .acordeon div::-webkit-scrollbar-button:start{
-   background: url('../img/scroll_top.png') no-repeat;
-   background-size: 9px 6px;
-   background-position: 50%;
+    background: url('../img/scroll_top.png') no-repeat;
+    background-size: 9px 6px;
+    background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:end{
-   background: url('../img/scroll_bottom.png') no-repeat;
-   background-size: 9px 6px;
-   background-position: 50%;
+    background: url('../img/scroll_bottom.png') no-repeat;
+    background-size: 9px 6px;
+    background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:horizontal:start{
-   background: url('../img/scroll_left.png') no-repeat;
-   background-size: 6px 9px;
-   background-position: 50%;
+    background: url('../img/scroll_left.png') no-repeat;
+    background-size: 6px 9px;
+    background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar-button:horizontal:end{
-   background: url('../img/scroll_right.png') no-repeat;
-   background-size: 6px 9px;
-   background-position: 50%;
+    background: url('../img/scroll_right.png') no-repeat;
+    background-size: 6px 9px;
+    background-position: 50%;
 }
 
 .acordeon div::-webkit-scrollbar {
-   width: 12px;
-   height: 6px;
+    width: 12px;
+    height: 6px;
 }
 
 .acordeon div::-webkit-scrollbar:horizontal {
-   width: 6px;
-   height: 12px;
+    width: 6px;
+    height: 12px;
 }
 
 .acordeon div::-webkit-scrollbar-track {
-   border-radius: 4px;
-   border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    border: 1px solid #D1D1D1;
 }
 
 .acordeon div::-webkit-scrollbar-track-piece {
-   border-radius: 4px;
-   background-color: #EEEEEE;
+    border-radius: 4px;
+    background-color: #EEEEEE;
 }
 
 .acordeon div::-webkit-scrollbar-thumb {
-   border-radius: 4px;
-   background-color: #cccccc;
+    border-radius: 4px;
+    background-color: #cccccc;
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+
+    header{   
+        width :95%;
+        height: auto;
+    }
+    body,html{
+        width: 95%;
+        height: auto;
+    }
+    #encabezado {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0;
+        display: block;
+    }
+    #logo_cabecera {
+        background-size: 100% 100%;
+        margin: 0px;
+    }
+    #social{
+        text-align: center;
+        margin: 0 auto 0;
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        height: 50px;
+        list-style: none;
+        display: block;
+    }
+    nav li a {
+        width: 100%;
+        font-size: 30px;
+        padding: 4px;
+        border-radius: 4px;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+        border-right: 0px;
+
+    }
+    nav li a:hover {
+        background-color: #D4B86F;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #F8F6E9;
+    }
+    .sections{
+        width: 100%;
+        height: auto;
+    }
+    .divizquierda{
+        display: block;
+        width: 100%;
+    }
+    .divderecha{ 
+        display: block;
+        width: 100%;
+    }
+    footer{
+        width: 95%;
+    }
 }
